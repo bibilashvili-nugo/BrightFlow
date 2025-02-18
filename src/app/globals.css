@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #090b0f;
+  background-image: url("/vector.svg"), url("/vector1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+
+@media (min-width: 1536px) {
+  body {
+    background-image: url("/vector6.svg"), url("/vector5.svg");
+    background-size: 604px auto, 480px auto;
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-image: url("/vector4.svg"), url("/vector5.svg");
+    background-size: 422px auto, 450px auto;
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/vector2.svg"), url("/vector3.svg");
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    background-image: none;
+  }
+}
