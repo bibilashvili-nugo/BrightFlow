@@ -59,68 +59,68 @@ export async function POST(req) {
 
       html: `
         <main style="width: 100%; max-width: 1000px; margin: auto">
-      <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
-        <table style="width: 100%">
-          <thead style="width: 100%">
-            <tr style="width: 100%">
-              <th
-                width="20%"
-                style="background-color: #d5fe00; height: 8px"
-              ></th>
-              <th
-                width="20%"
-                style="background-color: #0766ff; height: 8px"
-              ></th>
-              <th
-                width="20%"
-                style="background-color: #f7ca00; height: 8px"
-              ></th>
-              <th
-                width="20%"
-                style="background-color: #cdf300; height: 8px"
-              ></th>
-              <th
-                width="20%"
-                style="background-color: #ff7d4d; height: 8px"
-              ></th>
-            </tr>
-          </thead>
-        </table>
-      </section>
-      <section style="width: 100%; max-width: 600px; margin: auto">
-        <table style="width: 100%; border: 1px solid black">
-          <tbody style="width: 100%">
-            <tr
-              style="
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <td
+        <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
+          <table style="width: 100%">
+            <thead style="width: 100%">
+              <tr style="width: 100%">
+                <th
+                  width="20%"
+                  style="background-color: #d5fe00; height: 8px"
+                ></th>
+                <th
+                  width="20%"
+                  style="background-color: #0766ff; height: 8px"
+                ></th>
+                <th
+                  width="20%"
+                  style="background-color: #f7ca00; height: 8px"
+                ></th>
+                <th
+                  width="20%"
+                  style="background-color: #cdf300; height: 8px"
+                ></th>
+                <th
+                  width="20%"
+                  style="background-color: #ff7d4d; height: 8px"
+                ></th>
+              </tr>
+            </thead>
+          </table>
+        </section>
+        <section style="width: 100%; max-width: 600px; margin: auto">
+          <table style="width: 100%; border: 1px solid black">
+            <tbody style="width: 100%">
+              <tr
                 style="
+                  width: 100%;
                   display: flex;
-                  justify-content: center;
+                  justify-content: space-between;
                   align-items: center;
-                  gap: 12px;
                 "
               >
-                <img
-                  src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
-                  alt="spiderman"
-                  width="25"
-                  height="29"
-                />
-                <span>BrightFlow</span>
-              </td>
-              <td>nugo</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-      `
+                <td
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                  "
+                >
+                  <img
+                    src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
+                    alt="spiderman"
+                    width="25"
+                    height="29"
+                  />
+                  <span>BrightFlow</span>
+                </td>
+                <td>nugo</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+      `,
 
       // text: `Hi ${name},\n\nThank you for signing up! We are excited to have you with us.`,
       // text: `
