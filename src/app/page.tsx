@@ -41,7 +41,7 @@ export default function Home() {
       className="flex flex-col smaller:py-8 items-center justify-center h-full w-full pt-[149px] pb-[14px] md:pt-[104px] md:pb-[43px] 
     xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]"
     >
-      {/* <div className="items-center"></div> */}
+      {/* <div className="items-center justify-between"></div> */}
       <div className="flex smaller:gap-4 items-center smaller:pb-8 justify-center gap-5 pb-12 md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
         <Image
           src="/BrightFlowLogo.svg"

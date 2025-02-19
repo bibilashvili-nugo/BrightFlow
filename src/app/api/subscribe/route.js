@@ -66,7 +66,7 @@ export async function POST(req) {
         <table role="presentation" width="100%" style="background-color: white; max-width: 1000px; margin: auto;">
           <tr>
             <td>
-              <table role="presentation" width="100%" style="border-spacing: 0; padding-bottom: 20px;">
+              <table role="presentation" width="100%" style="border-spacing: 0;">
                 <tr>
                   <td width="20%" style="background-color: #D5FE00; height: 8px;"></td>
                   <td width="20%" style="background-color: #0766FF; height: 8px;"></td>
@@ -81,13 +81,14 @@ export async function POST(req) {
           <tr>
             <td align="center">
               <table role="presentation" width="90%" style="max-width: 600px; border-spacing: 0;">
-                <tr>
+                <tr style="display: flex; justify-content: space-between;">
                   <td style="display: flex; align-items: center;">
                     <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
                     <span style="font-size: 24px; font-weight: bold; padding-left: 12px;">BrightFlow</span>
                   </td>
-                  <td align="right" style="padding-left: 12px;">
+                  <td align="right" style="display: flex; align-items: center;">
                     <span>ეწვიეთ ვებ გვერდს</span>
+                    <img src="cid:globeLogo" alt="Bright Flow" style="display: block" width="24" height="24"/>
                   </td>
                 </tr>
               </table>
@@ -100,6 +101,11 @@ export async function POST(req) {
           filename: "brightFlowEmail.png",
           path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
           cid: "emailLogo",
+        },
+        {
+          filename: "Globe.svg",
+          path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
+          cid: "globeLogo",
         },
       ],
       // attachments: [
