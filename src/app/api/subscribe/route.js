@@ -78,22 +78,41 @@ export async function POST(req) {
             </td>
           </tr>
 
-          <tr>
-            <td align="center">
-              <table role="presentation" width="90%" style="max-width: 600px; border-spacing: 0;">
-                <tr style="display: flex; justify-content: space-between;">
-                  <td style="display: flex; align-items: center;">
-                    <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
-                    <span style="font-size: 24px; font-weight: bold; padding-left: 12px;">BrightFlow</span>
-                  </td>
-                  <td align="right" style="display: flex; align-items: center;">
-                    <span>ეწვიეთ ვებ გვერდს</span>
-                    <img src="cid:globeLogo" alt="Bright Flow" style="display: block" width="24" height="24"/>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+           <tr>
+              <td align="center">
+                <table role="presentation" width="90%" style="max-width: 600px; border-spacing: 0;">
+                  <tr>
+                    <!-- Logo Section -->
+                    <td align="left">
+                      <table role="presentation">
+                        <tr>
+                          <td>
+                            <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
+                          </td>
+                          <td style="font-size: 24px; font-weight: bold; padding-left: 12px;">
+                            BrightFlow
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <!-- Visit Website Section -->
+                    <td align="right">
+                      <table role="presentation">
+                        <tr>
+                          <td>
+                            <span>ეწვიეთ ვებ გვერდს</span>
+                          </td>
+                          <td>
+                            <img src="cid:globeLogo" alt="Bright Flow" style="display: block;" width="24" height="24"/>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
         </table>
       `,
       attachments: [
