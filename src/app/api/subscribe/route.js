@@ -100,10 +100,7 @@ export async function POST(req) {
               >
                 <td
                   style="
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 12px;
+                    text-align: center; padding-right: 12px;
                   "
                 >
                   <img
@@ -114,7 +111,7 @@ export async function POST(req) {
                   />
                   <span>BrightFlow</span>
                 </td>
-                <td>nugo</td>
+                <td>Illuminating the Path to Tomorrow</td>
               </tr>
             </tbody>
           </table>
