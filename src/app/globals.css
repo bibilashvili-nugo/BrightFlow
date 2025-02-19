@@ -10,25 +10,25 @@ body {
   background-position: center;
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1920px) {
   body {
     background-image: url("/bg1536Plus.svg");
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1248px) {
   body {
     background-image: url("/bg1280Plus.svg");
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 744px) {
   body {
     background-image: url("/bg768Plus.svg");
   }
 }
 
-@media (min-width: 479px) {
+@media (min-width: 480px) {
   body {
     background-image: url("/bg480Plus.svg");
   }
