@@ -65,7 +65,7 @@ export async function POST(req) {
       html: `
         <table role="presentation" width="100%" style="background-color: white; max-width: 1000px; margin: auto;">
           <tr>
-            <td>
+            <td style="padding-bottom: 32px;">
               <table role="presentation" width="100%" style="border-spacing: 0;">
                 <tr>
                   <td width="20%" style="background-color: #D5FE00; height: 8px;"></td>
@@ -89,7 +89,7 @@ export async function POST(req) {
                           <td>
                             <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
                           </td>
-                          <td style="font-size: 24px; font-weight: bold; padding-left: 12px;">
+                          <td style="font-size: 24px; font-weight: bold; padding-left: 12px; ">
                             BrightFlow
                           </td>
                         </tr>
