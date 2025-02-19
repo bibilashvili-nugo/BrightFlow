@@ -59,37 +59,60 @@ export async function POST(req) {
 
       html: `
         <main style="width: 100%; max-width: 1000px; margin: auto">
-  <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
-    <table style="width: 100%; border-spacing: 4px;"> <!-- Adjust spacing between cells -->
-      <thead>
-        <tr>
-          <th width="20%" style="background-color: #d5fe00; height: 8px"></th>
-          <th width="20%" style="background-color: #0766ff; height: 8px"></th>
-          <th width="20%" style="background-color: #f7ca00; height: 8px"></th>
-          <th width="20%" style="background-color: #cdf300; height: 8px"></th>
-          <th width="20%" style="background-color: #ff7d4d; height: 8px"></th>
-        </tr>
-      </thead>
-    </table>
-  </section>
-
-  <section style="width: 100%; max-width: 600px; margin: auto">
-    <table style="width: 100%; border: 1px solid black; border-spacing: 8px;"> <!-- Added border-spacing here for space between cells -->
-      <tbody>
-        <tr style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
-          <td style="text-align: center; padding-right: 12px; padding-bottom: 12px;"> <!-- Added padding for spacing -->
-            <img src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png" alt="spiderman" width="25" height="29" />
-            <span>BrightFlow</span>
-          </td>
-          <td style="padding-bottom: 12px;"> <!-- Added padding here as well -->
-            Illuminating the Path to Tomorrow
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-</main>
-
+      <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
+        <table style="width: 100%">
+          <thead style="width: 100%">
+            <tr style="width: 100%">
+              <th
+                width="20%"
+                style="background-color: #d5fe00; height: 8px"
+              ></th>
+              <th
+                width="20%"
+                style="background-color: #0766ff; height: 8px"
+              ></th>
+              <th
+                width="20%"
+                style="background-color: #f7ca00; height: 8px"
+              ></th>
+              <th
+                width="20%"
+                style="background-color: #cdf300; height: 8px"
+              ></th>
+              <th
+                width="20%"
+                style="background-color: #ff7d4d; height: 8px"
+              ></th>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <section style="width: 100%; max-width: 600px; margin: auto">
+        <table style="width: 100%; border: 1px solid black">
+          <tbody style="width: 100%">
+            <tr style="width: 100%">
+              <td align="left">
+                <img
+                  src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
+                  alt="spiderman"
+                  width="25"
+                  height="29"
+                  style="vertical-align: middle; display: inline"
+                />
+                <span style="display: inline-block; padding-left: 12px"
+                  >BrightFlow</span
+                >
+              </td>
+              <td align="right">
+                <span style="font-size: 14px"
+                  >Illuminating the Path to Tomorrow
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
       `,
 
       // text: `Hi ${name},\n\nThank you for signing up! We are excited to have you with us.`,
