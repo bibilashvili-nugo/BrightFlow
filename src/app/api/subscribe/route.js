@@ -87,13 +87,13 @@ export async function POST(req) {
         </div>
 
       `,
-      attachments: [
-        {
-          filename: "brightFlowEmail.png",
-          path: "public/brightFlowEmail.png",
-          cid: "emailLogo",
-        },
-      ],
+      // attachments: [
+      //   {
+      //     filename: "brightFlowEmail.png",
+      //     path: "public/brightFlowEmail.png",
+      //     cid: "emailLogo",
+      //   },
+      // ],
     });
 
     return new Response(
