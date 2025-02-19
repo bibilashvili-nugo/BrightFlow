@@ -1,6 +1,41 @@
+"use client";
+
 import Image from "next/image";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 export default function Home() {
+  const [formData, setFormData] = useState<{ name: string; email: string }>({
+    name: "",
+    email: "",
+  });
+  const [status, setStatus] = useState<string>("");
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("Thank you for signing up!");
+        setFormData({ name: "", email: "" });
+      } else {
+        setStatus(`Error: ${data.error}`);
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("An unexpected error occurred.");
+    }
+  };
+
   return (
     <div
       className="flex flex-col smaller:py-8 items-center justify-center h-full w-full pt-[149px] pb-[14px] md:pt-[104px] md:pb-[43px] 
@@ -37,7 +72,10 @@ export default function Home() {
           Illuminating the Path to Tomorrow
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center gap-6 smaller:pb-10 pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-[92px]">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col justify-center items-center gap-6 smaller:pb-10 pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-[92px]"
+      >
         <div className="hidden xl:block">
           <p className="text-[#A0A2A6] font-normal xl:text-[13px] 2xl:text-base">
             Launching in May 2025
@@ -48,28 +86,39 @@ export default function Home() {
             Launching in May 2025
           </p>
           <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
             placeholder="Full Name"
             className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
             placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
             w-[332px] md:w-[530px] xl:w-[269px]"
           />
           <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
             placeholder="name@email.com"
             className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
             placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
             w-[332px] md:w-[530px] xl:w-[269px]"
           />
-          <button className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block">
+          <button
+            type="submit"
+            className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block"
+          >
             Join the waitlist
           </button>
         </div>
         <button
+          type="submit"
           className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
         w-[332px] md:w-[530px] xl:w-[150px] xl:hidden"
         >
           Join the waitlist
         </button>
-      </div>
+      </form>
+      {status && <p className="text-white mt-4">{status}</p>}
       <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
         <div
           className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
