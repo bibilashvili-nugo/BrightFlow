@@ -63,29 +63,37 @@ export async function POST(req) {
       //   </div>
       // `,
       html: `
-        <div style="width: 1000px; background-color: white;">
-          <div style="display: flex; padding-bottom: 44px">
-            <hr style="width: 200px; height: 8px; background-color: #D5FE00; border: none;"/>
-            <hr style="width: 200px; height: 8px; background-color: #0766FF; border: none;"/>
-            <hr style="width: 200px; height: 8px; background-color: #F7CA00; border: none;"/>
-            <hr style="width: 200px; height: 8px; background-color: #CDF300; border: none;"/>
-            <hr style="width: 200px; height: 8px; background-color: #FF7D4D; border: none;"/>
-          </div>
-          <div style="width: 600px; margin: auto;">
-            <table role="presentation" style="width: 100%; border-spacing: 0; padding: 0;">
-              <tr>
-                <td style="display: flex; align-items: center;">
-                  <img src="cid:emailLogo" alt="BrightFlow" width="29px" height="33px" style="display: block;" />
-                  <span style="font-size: 24px; font-weight: bold; display: block; padding-left: 12px;">BrightFlow</span>
-                </td>
-                <td style="text-align: right; padding-left: 12px;">
-                  <span>ეწვიეთ ვებ გვერდს</span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <table role="presentation" width="100%" style="background-color: white; max-width: 1000px; margin: auto;">
+          <tr>
+            <td>
+              <table role="presentation" width="100%" style="border-spacing: 0; padding-bottom: 20px;">
+                <tr>
+                  <td width="20%" style="background-color: #D5FE00; height: 8px;"></td>
+                  <td width="20%" style="background-color: #0766FF; height: 8px;"></td>
+                  <td width="20%" style="background-color: #F7CA00; height: 8px;"></td>
+                  <td width="20%" style="background-color: #CDF300; height: 8px;"></td>
+                  <td width="20%" style="background-color: #FF7D4D; height: 8px;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
+          <tr>
+            <td align="center">
+              <table role="presentation" width="90%" style="max-width: 600px; border-spacing: 0;">
+                <tr>
+                  <td style="display: flex; align-items: center;">
+                    <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
+                    <span style="font-size: 24px; font-weight: bold; padding-left: 12px;">BrightFlow</span>
+                  </td>
+                  <td align="right" style="padding-left: 12px;">
+                    <span>ეწვიეთ ვებ გვერდს</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       `,
       attachments: [
         {
