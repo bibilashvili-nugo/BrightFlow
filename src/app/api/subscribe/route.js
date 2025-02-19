@@ -58,7 +58,7 @@ export async function POST(req) {
       subject: "Welcome!",
 
       html: `
-       <main style="width: 100%; max-width: 1000px; margin: auto">
+      <main style="width: 100%; max-width: 1000px; margin: auto">
       <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
         <table style="width: 100%">
           <thead style="width: 100%">
@@ -142,7 +142,7 @@ export async function POST(req) {
           padding-bottom: 44px;
         "
       >
-        <table style="width: 100%; border: 1px solid black">
+        <table style="width: 100%">
           <tr style="width: 100%; padding-bottom: 12px">
             <td style="font-size: 14px; line-height: 21px">
               BrightFlow ეხმარება ადამიანებს, რომ შეიძინონ ციფრული უნარები, რაც
@@ -163,27 +163,117 @@ export async function POST(req) {
       <section style="width: 100%; max-width: 600px; margin: auto">
         <table style="width: 100%; border: 0">
           <tr>
-            <td style="width: 50%; padding-right: 10px">
-              <table
-                style="width: 100%; border: 1px solid black; height: 419px"
-              >
+            <td style="width: 50%; padding-right: 8px">
+              <table style="width: 100%; height: 419px">
                 <tr style="width: 100%">
-                  <td style="height: 33%; border: 1px solid green">nugo</td>
+                  <td
+                    style="
+                      height: 33%;
+                      background-color: #f7ca00;
+                      border-radius: 22px;
+                      border-bottom: 8px solid white;
+                      padding-top: 30px;
+                      padding-bottom: 30px;
+                      position: relative;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 36px;
+                        color: white;
+                        padding-left: 24px;
+                        padding-right: 30px;
+                      "
+                      >უფასო
+                    </span>
+                    <span
+                      style="
+                        font-size: 36px;
+                        color: white;
+                        padding-left: 24px;
+                        padding-right: 30px;
+                      "
+                      >მასტერკლასები</span
+                    >
+                    <img
+                      src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
+                      alt="frame"
+                      width="32px"
+                      height="32px"
+                      style="position: absolute; top: 16px; right: 16px"
+                    />
+                  </td>
                 </tr>
                 <tr style="width: 100%">
-                  <td style="height: 66%">nugo</td>
+                  <td
+                    style="
+                      height: 66%;
+                      background-color: #0766ff;
+                      border-radius: 28px;
+                      border-top: 8px solid white;
+                      text-align: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
+                      alt="frame"
+                      width="32px"
+                      height="32px"
+                      style="position: absolute; top: 16px; right: 16px"
+                    />
+                    <span
+                      style="
+                        font-size: 36px;
+                        color: white;
+                        display: inline-block;
+                      "
+                      >შემოუერთდი საზოგადოებას
+                    </span>
+                    <span
+                      style="
+                        width: 113px;
+                        height: 50px;
+                        background-color: white;
+                        text-align: center;
+                        line-height: 50px;
+                        display: inline-block;
+                        margin-top: 15px;
+                      "
+                    >
+                      DISCORD
+                    </span>
+                  </td>
                 </tr>
               </table>
             </td>
-            <td style="width: 50%; padding-left: 10px">
-              <table
-                style="width: 100%; border: 1px solid black; height: 419px"
-              >
+            <td style="width: 50%; padding-left: 8px">
+              <table style="width: 100%; height: 419px">
                 <tr style="width: 100%">
-                  <td style="height: 33%; border: 1px solid green">nugo</td>
+                  <td
+                    style="
+                      height: 66%;
+                      border-bottom: 8px solid transparent;
+                      background-color: #090b0f;
+                      border-radius: 28px;
+                      border-bottom: 8px solid white;
+                    "
+                  >
+                    nugo
+                  </td>
                 </tr>
                 <tr style="width: 100%">
-                  <td style="height: 66%">nugo</td>
+                  <td
+                    style="
+                      height: 33%;
+                      border-top: 8px solid transparent;
+                      background-color: #d5fe00;
+                      border-radius: 22px;
+                      border-top: 8px solid white;
+                    "
+                  >
+                    nugo
+                  </td>
                 </tr>
               </table>
             </td>
