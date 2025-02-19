@@ -56,7 +56,44 @@ export async function POST(req) {
       from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
       to: email,
       subject: "Welcome!",
-      text: `Hi ${name},\n\nThank you for signing up! We are excited to have you with us.`,
+      // text: `Hi ${name},\n\nThank you for signing up! We are excited to have you with us.`,
+      // text: `
+      //   <div style="background-color: #f3f4f6; padding: 20px; text-align: center;">
+      //   nugoo
+      //   </div>
+      // `,
+      html: `
+        <div style="width: 1000px; background-color: white;">
+          <div style="display: flex; padding-bottom: 44px">
+            <hr style="width: 200px; height: 8px; background-color: #D5FE00; border: none;"/>
+            <hr style="width: 200px; height: 8px; background-color: #0766FF; border: none;"/>
+            <hr style="width: 200px; height: 8px; background-color: #F7CA00; border: none;"/>
+            <hr style="width: 200px; height: 8px; background-color: #CDF300; border: none;"/>
+            <hr style="width: 200px; height: 8px; background-color: #FF7D4D; border: none;"/>
+          </div>
+          <div style="width: 600px; margin: auto;">
+            <table role="presentation" style="width: 100%; border-spacing: 0; padding: 0;">
+              <tr>
+                <td style="display: flex; align-items: center;">
+                  <img src="cid:emailLogo" alt="BrightFlow" width="29px" height="33px" style="display: block;" />
+                  <span style="font-size: 24px; font-weight: bold; display: block; padding-left: 12px;">BrightFlow</span>
+                </td>
+                <td style="text-align: right; padding-left: 12px;">
+                  <span>ეწვიეთ ვებ გვერდს</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      `,
+      attachments: [
+        {
+          filename: "brightFlowEmail.png",
+          path: "public/brightFlowEmail.png",
+          cid: "emailLogo",
+        },
+      ],
     });
 
     return new Response(
