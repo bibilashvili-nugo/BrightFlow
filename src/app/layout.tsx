@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BrightFlow",
+  title:
+    "BrightFlow • კურსები, მასტერკლასები, ვორქშოპები, ტრენინგები, ონლაინ კურსები ",
   description: "Illuminating the Path to Tomorrow",
 };
 
