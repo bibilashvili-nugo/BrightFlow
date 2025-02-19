@@ -58,7 +58,7 @@ export async function POST(req) {
       subject: "Welcome!",
 
       html: `
-        <main style="width: 100%; max-width: 1000px; margin: auto">
+       <main style="width: 100%; max-width: 1000px; margin: auto">
       <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
         <table style="width: 100%">
           <thead style="width: 100%">
@@ -87,8 +87,15 @@ export async function POST(req) {
           </thead>
         </table>
       </section>
-      <section style="width: 100%; max-width: 600px; margin: auto">
-        <table style="width: 100%; border: 1px solid black">
+      <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 32px;
+        "
+      >
+        <table style="width: 100%; border: 1px solid black; padding: 26.5px 0">
           <tbody style="width: 100%">
             <tr style="width: 100%">
               <td align="left">
@@ -110,6 +117,77 @@ export async function POST(req) {
               </td>
             </tr>
           </tbody>
+        </table>
+      </section>
+      <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 16px;
+        "
+      >
+        <table style="width: 100%; border: 1px solid black">
+          <tr style="width: 100%">
+            <td style="font-size: 62px">მადლობა გამოწერისთვის</td>
+          </tr>
+        </table>
+      </section>
+
+      <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 44px;
+        "
+      >
+        <table style="width: 100%; border: 1px solid black">
+          <tr style="width: 100%; padding-bottom: 12px">
+            <td style="font-size: 14px; line-height: 21px">
+              BrightFlow ეხმარება ადამიანებს, რომ შეიძინონ ციფრული უნარები, რაც
+              მათ დაუკმაყოფილებს სამომავლო მოთხოვნებს.
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 14px; line-height: 21px">
+              კურსდამთავრებულებს საშუალება ექნებათ იყვნენ კონკურენტუნარიანი და
+              მოთხოვნადი დასაქმების ბაზარზე. ამ ეტაპზე ჩვენ ვაერთიანებთ 30+
+              პროგრამას მონაცემების, მარკეტინგის, დიზაინის, IT მენეჯმენტის,
+              პროგრამირების მიმართულებით
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section style="width: 100%; max-width: 600px; margin: auto">
+        <table style="width: 100%; border: 0">
+          <tr>
+            <td style="width: 50%; padding-right: 10px">
+              <table
+                style="width: 100%; border: 1px solid black; height: 419px"
+              >
+                <tr style="width: 100%">
+                  <td style="height: 33%; border: 1px solid green">nugo</td>
+                </tr>
+                <tr style="width: 100%">
+                  <td style="height: 66%">nugo</td>
+                </tr>
+              </table>
+            </td>
+            <td style="width: 50%; padding-left: 10px">
+              <table
+                style="width: 100%; border: 1px solid black; height: 419px"
+              >
+                <tr style="width: 100%">
+                  <td style="height: 33%; border: 1px solid green">nugo</td>
+                </tr>
+                <tr style="width: 100%">
+                  <td style="height: 66%">nugo</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
       </section>
     </main>
