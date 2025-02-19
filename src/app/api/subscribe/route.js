@@ -87,6 +87,13 @@ export async function POST(req) {
         </div>
 
       `,
+      attachments: [
+        {
+          filename: "brightFlowEmail.png",
+          path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
+          cid: "emailLogo",
+        },
+      ],
       // attachments: [
       //   {
       //     filename: "brightFlowEmail.png",
