@@ -164,176 +164,27 @@ export async function POST(req) {
           </tr>
         </table>
       </section>
-
-      <section style="width: 100%; max-width: 600px; margin: auto">
-        <table style="width: 100%; border-collapse: collapse">
-          <tr>
-            <td style="width: 50%; padding-right: 8px">
-              <table style="width: 100%; height: 419px; border-spacing: 0">
-                <tr>
-                  <td
-                    style="
-                      height: 33%;
-                      background-color: #f7ca00;
-                      border-radius: 22px;
-                      border-bottom: 8px solid white;
-                      text-align: left;
-                      padding: 30px;
-                    "
-                  >
-                    <table style="width: 100%">
-                      <tr>
-                        <td style="font-size: 36px; color: white">უფასო</td>
-                        <td style="text-align: right; margin-bottom: 64px">
-                          <img
-                            src="frame.png"
-                            alt="frame"
-                            width="32"
-                            height="32"
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 36px; color: white">
-                          მასტერკლასები
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      height: 66%;
-                      background-color: #0766ff;
-                      border-radius: 28px;
-                      border-top: 8px solid white;
-                      text-align: center;
-                    "
-                  >
-                    <table style="width: 100%">
-                      <tr>
-                        <td style="text-align: right; padding: 10px">
-                          <img
-                            src="frame.png"
-                            alt="frame"
-                            width="32"
-                            height="32"
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="font-size: 36px; color: white">
-                          შემოუერთდი საზოგადოებას
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-top: 15px">
-                          <span
-                            style="
-                              width: 113px;
-                              height: 50px;
-                              background-color: white;
-                              display: inline-block;
-                              text-align: center;
-                              line-height: 50px;
-                            "
-                          >
-                            DISCORD
-                          </span>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-
-            <td style="width: 50%; padding-left: 8px">
-              <table style="width: 100%; height: 419px; border-spacing: 0">
-                <tr>
-                  <td
-                    style="
-                      height: 66%;
-                      background-color: #090b0f;
-                      border-radius: 28px;
-                      border-bottom: 8px solid white;
-                      text-align: center;
-                      color: white;
-                    "
-                  >
-                    <table>
-                      <tr>
-                        <td style="text-align: right; padding-right: 16px">
-                          <img
-                            src="frame.png"
-                            alt="frame"
-                            width="32"
-                            height="32"
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span
-                            style="
-                              width: 113px;
-                              height: 53px;
-                              color: white;
-                              background-color: #0766ff;
-                              display: inline-block;
-                              text-align: center;
-                              line-height: 53px;
-                              font-size: 32px;
-                            "
-                            >React</span
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="align-items: center">
-                          <span style="color: #d5fe00; font-size: 36px"
-                            >სამენტორო პროგრამა</span
-                          >
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      height: 33%;
-                      background-color: #d5fe00;
-                      border-radius: 22px;
-                      border-top: 8px solid white;
-                      text-align: center;
-                    "
-                  >
-                    <table>
-                      <tr>
-                        <td style="text-align: left; padding-left: 24px">
-                          <span style="display: inline-block; font-size: 36px"
-                            >ციფრული პროდუქტები
-                          </span>
-                        </td>
-                        <td>
-                          <img
-                            src="frame.png"
-                            alt="frame"
-                            width="32"
-                            height="32"
-                          />
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
+      
+       <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 16px;
+        "
+      >
+        <table style="width: 100%">
+          <tr style="width: 100%">
+            <td align="left">
+              <img src="cid:cards"
+                alt="პროგრამებზე ინფორმაცია" 
+                width="100%" 
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
             </td>
           </tr>
         </table>
       </section>
+      
     </main>
       `,
 
@@ -349,6 +200,13 @@ export async function POST(req) {
           filename: "thankYou.png",
           path: "https://bright-flow-two.vercel.app/thankYou.png",
           cid: "thankYou",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "cards.png",
+          path: "https://bright-flow-two.vercel.app/cards.png",
+          cid: "cards",
           contentType: "image/png",
           contentDisposition: "inline",
         },
