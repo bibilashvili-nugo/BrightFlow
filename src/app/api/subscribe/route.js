@@ -200,7 +200,7 @@ export async function POST(req) {
                 href="tel:+1234567890"
                 style="display: block; text-decoration: none; color: inherit"
               >
-                <img src="cid: Phone" alt="phone" width="24" height="24" />
+                <img src="cid:phone-call" alt="phone" width="24" height="24" />
                 <span>დაგვიკავშირდი</span>
               </a>
             </td>
@@ -209,7 +209,7 @@ export async function POST(req) {
                 href="https://bright-flow-two.vercel.app/"
                 style="display: block; text-decoration: none; color: inherit"
               >
-                <img src="cid: Phone" alt="web-page" width="24" height="24" />
+                <img src="" alt="web-page" width="24" height="24" />
                 <span>ვებ-გვერდი</span>
               </a>
             </td>
@@ -243,9 +243,9 @@ export async function POST(req) {
           contentDisposition: "inline",
         },
         {
-          filename: "Phone.png",
-          path: "https://bright-flow-two.vercel.app/Phone.png",
-          cid: "Phone",
+          filename: "phone-call.png",
+          path: "https://bright-flow-two.vercel.app/phone-call.png",
+          cid: "phone-call",
           contentType: "image/png",
           contentDisposition: "inline",
         },
