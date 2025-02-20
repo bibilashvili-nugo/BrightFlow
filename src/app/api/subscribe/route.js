@@ -332,6 +332,11 @@ export async function POST(req) {
               >
             </td>
           </tr>
+          <tr style="width: 100%; text-align: center">
+            <td style="color: white; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; padding-bottom: 24px">
+              BrightFlow
+            </td>
+          </tr>
           <tr>
             <td align="center">
               <table role="presentation" cellspacing="0" cellpadding="0" border="0">
