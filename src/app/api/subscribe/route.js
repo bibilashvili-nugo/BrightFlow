@@ -129,7 +129,7 @@ export async function POST(req) {
       >
         <table style="width: 100%">
           <tr style="width: 100%">
-            <td style="font-size: 62px;" class="font-brainMelt">მადლობა გამოწერისთვის</td>
+            <td style="font-size: 62px; font-family: 'brainMelt'">მადლობა გამოწერისთვის</td>
           </tr>
         </table>
       </section>
