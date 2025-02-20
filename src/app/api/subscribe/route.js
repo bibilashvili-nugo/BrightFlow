@@ -58,6 +58,12 @@ export async function POST(req) {
       subject: "Welcome!",
 
       html: `
+      <html>
+      <head>
+        <!-- Include the Google Fonts with multiple weights -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+      </head>
+      <body>
       <main style="width: 100%; max-width: 1000px; margin: auto">
       <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
         <table style="width: 100%">
@@ -106,12 +112,12 @@ export async function POST(req) {
                   height="29"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="display: inline-block; padding-left: 12px"
+                <span style="display: inline-block; padding-left: 12px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px"
                   >BrightFlow</span
                 >
               </td>
               <td align="right">
-                <span style="font-size: 14px"
+                <span style="font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 400;"
                   >Illuminating the Path to Tomorrow
                 </span>
               </td>
@@ -216,7 +222,7 @@ export async function POST(req) {
                   height="24"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="padding-left: 12px">დაგვიკავშირდი</span>
+                <span style="padding-left: 12px; font-size: 16px">დაგვიკავშირდი</span>
               </a>
             </td>
 
@@ -251,6 +257,8 @@ export async function POST(req) {
       </section>
       
     </main>
+    </body>
+    </html>
       `,
 
       attachments: [
