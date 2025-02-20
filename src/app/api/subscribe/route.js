@@ -53,8 +53,7 @@ export async function POST(req) {
 
     // Send a welcome email to the user
     await transporter.sendMail({
-      // from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
-      form: "BrightFlow",
+      from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
       to: email,
       subject: "გვიხარია რომ შემოგვიერთდი!",
 
@@ -312,7 +311,7 @@ export async function POST(req) {
             </td>
           </tr>
           <tr style="width: 100%; text-align: center">
-            <td>
+            <td style="padding-top: 32px; padding-bottom: 52px">
               <span
                 style="
                   display: inline-block;
@@ -339,7 +338,7 @@ export async function POST(req) {
                 <tr>
                   <td style="padding-right: 16px;">
                     <a href="https://www.facebook.com/BrightFloow" style="text-decoration: none; color: inherit">
-                      <img src="cid:facebookIcon" 
+                      <img src="cid:facebook" 
                            alt="facebook" width="20" height="20" />
                     </a>
                   </td>
@@ -412,7 +411,7 @@ export async function POST(req) {
         {
           filename: "facebook.png",
           path: "https://bright-flow-two.vercel.app/facebook.png",
-          cid: "facebookIcon",
+          cid: "facebook",
           contentType: "image/png",
           contentDisposition: "inline",
         },
