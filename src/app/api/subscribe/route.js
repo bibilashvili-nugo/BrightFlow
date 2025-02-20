@@ -130,7 +130,7 @@ export async function POST(req) {
         <table style="width: 100%">
           <tr style="width: 100%">
             <td>
-              <img src="cid:thankYou"
+              <img src="https://bright-flow-two.vercel.app/thankYou.jpg"
                 alt="მადლობა გამოწერისთვის" 
                 width="400px" 
                 style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -345,13 +345,13 @@ export async function POST(req) {
           contentType: "image/png",
           contentDisposition: "inline",
         },
-        {
-          filename: "thankYou.jpg",
-          path: "https://bright-flow-two.vercel.app/thankYou.jpg",
-          cid: "thankYou",
-          contentType: "image/jpg",
-          contentDisposition: "inline",
-        },
+        // {
+        //   filename: "thankYou.jpg",
+        //   path: "https://bright-flow-two.vercel.app/thankYou.jpg",
+        //   cid: "thankYou",
+        //   contentType: "image/jpg",
+        //   contentDisposition: "inline",
+        // },
       ],
     });
 
