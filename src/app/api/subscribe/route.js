@@ -216,7 +216,7 @@ export async function POST(req) {
                 style="display: block; text-decoration: none; color: inherit"
               >
                 <img
-                  src="cid:phone-call"
+                  src="cid:phone"
                   alt="phone"
                   width="24"
                   height="24"
@@ -462,9 +462,9 @@ export async function POST(req) {
           contentDisposition: "inline",
         },
         {
-          filename: "phone-call.png",
-          path: "https://bright-flow-two.vercel.app/phone-call.png",
-          cid: "phone-call",
+          filename: "phone.png",
+          path: "https://bright-flow-two.vercel.app/phone.png",
+          cid: "phone",
           contentType: "image/png",
           contentDisposition: "inline",
         },
