@@ -414,6 +414,25 @@ export async function POST(req) {
           </tr>
         </table>
       </section>
+
+      <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-top: 14px;
+          padding-bottom: 37px;
+        "
+      >
+        <table style="width: 100%">
+          <tr style="text-align: center">
+            <td style="color: black; font-size: 14">ყველა უფლება დაცულია</td>
+          </tr>
+          <tr style="text-align: center">
+            <td style="color: black; font-size: 14">© BrightFlow 2025</td>
+          </tr>
+        </table>
+      </section>
       
     </main>
     </body>
