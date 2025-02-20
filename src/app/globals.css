@@ -11,6 +11,13 @@ body {
   background-attachment: fixed;
 }
 
+@font-face {
+  font-family: "brainMelt";
+  src: url("/fonts/brainMelt.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (min-width: 1920px) {
   body {
     background-image: url("/bg1920.png");
