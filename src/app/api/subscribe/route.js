@@ -344,8 +344,8 @@ export async function POST(req) {
           cid: "emailLogo",
         },
         {
-          filename: "thankYou.svg",
-          path: "https://bright-flow-two.vercel.app/thankYou.svg",
+          filename: "thankYou.jpg",
+          path: "https://bright-flow-two.vercel.app/thankYou.jpg",
           cid: "thankYou",
         },
       ],
