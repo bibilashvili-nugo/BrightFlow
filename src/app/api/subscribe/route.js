@@ -130,7 +130,10 @@ export async function POST(req) {
         <table style="width: 100%">
           <tr style="width: 100%">
             <td>
-              <img src="cid:thankYou" alt="მადლობა გამოწერისთვის" width="400px">
+              <img src="https://bright-flow-two.vercel.app/thank-you.png" 
+                alt="მადლობა გამოწერისთვის" 
+                width="400px" 
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
             </td>
           </tr>
         </table>
@@ -339,11 +342,6 @@ export async function POST(req) {
           filename: "brightFlowEmail.png",
           path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
           cid: "emailLogo",
-        },
-        {
-          filename: "thankYou.svg",
-          path: "https://bright-flow-two.vercel.app/thankYou.png",
-          cid: "thankYou",
         },
       ],
     });
