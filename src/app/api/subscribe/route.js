@@ -129,7 +129,9 @@ export async function POST(req) {
       >
         <table style="width: 100%">
           <tr style="width: 100%">
-            <td style="font-size: 62px; font-family: 'brainMelt', sans-serif;">მადლობა გამოწერისთვის</td>
+            <td>
+              <img src="cid:thankYou" alt="მადლობა გამოწერისთვის" width="400px">
+            </td>
           </tr>
         </table>
       </section>
@@ -339,9 +341,9 @@ export async function POST(req) {
           cid: "emailLogo",
         },
         {
-          filename: "Globe.svg",
-          path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
-          cid: "globeLogo",
+          filename: "thankYou.svg",
+          path: "https://bright-flow-two.vercel.app/thankYou.png",
+          cid: "thankYou",
         },
       ],
     });
