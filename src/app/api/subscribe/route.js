@@ -112,12 +112,12 @@ export async function POST(req) {
                   height="29"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="display: inline-block; padding-left: 12px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px"
+                <span style="display: inline-block; padding-left: 12px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; color: black; vertical-align: middle;"
                   >BrightFlow</span
                 >
               </td>
               <td align="right">
-                <span style="font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 400;"
+                <span style="font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 400; color: black"
                   >Illuminating the Path to Tomorrow
                 </span>
               </td>
@@ -155,13 +155,13 @@ export async function POST(req) {
       >
         <table style="width: 100%">
           <tr style="width: 100%; padding-bottom: 12px">
-            <td style="font-size: 14px; line-height: 21px">
+            <td style="font-size: 14px; line-height: 21px; color: black">
               BrightFlow ეხმარება ადამიანებს, რომ შეიძინონ ციფრული უნარები, რაც
               მათ დაუკმაყოფილებს სამომავლო მოთხოვნებს.
             </td>
           </tr>
           <tr>
-            <td style="font-size: 14px; line-height: 21px">
+            <td style="font-size: 14px; line-height: 21px; color: black">
               კურსდამთავრებულებს საშუალება ექნებათ იყვნენ კონკურენტუნარიანი და
               მოთხოვნადი დასაქმების ბაზარზე. ამ ეტაპზე ჩვენ ვაერთიანებთ 30+
               პროგრამას მონაცემების, მარკეტინგის, დიზაინის, IT მენეჯმენტის,
