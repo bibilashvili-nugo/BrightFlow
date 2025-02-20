@@ -95,13 +95,13 @@ export async function POST(req) {
           padding-bottom: 32px;
         "
       >
-        <table style="width: 100%; border: 1px solid black; padding: 26.5px 0">
+        <table style="width: 100%; padding: 26.5px 0">
           <tbody style="width: 100%">
             <tr style="width: 100%">
               <td align="left">
                 <img
-                  src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
-                  alt="spiderman"
+                  src="cid:emailLogo"
+                  alt="BrightFlow Logo"
                   width="25"
                   height="29"
                   style="vertical-align: middle; display: inline"
@@ -127,7 +127,7 @@ export async function POST(req) {
           padding-bottom: 16px;
         "
       >
-        <table style="width: 100%; border: 1px solid black">
+        <table style="width: 100%">
           <tr style="width: 100%">
             <td style="font-size: 62px">მადლობა გამოწერისთვის</td>
           </tr>
@@ -179,7 +179,7 @@ export async function POST(req) {
                     <table style="width: 100%">
                       <tr>
                         <td style="font-size: 36px; color: white">უფასო</td>
-                        <td style="text-align: right">
+                        <td style="text-align: right; margin-bottom: 64px">
                           <img
                             src="frame.png"
                             alt="frame"
@@ -257,7 +257,42 @@ export async function POST(req) {
                       color: white;
                     "
                   >
-                    nugo
+                    <table>
+                      <tr>
+                        <td style="text-align: right; padding-right: 16px">
+                          <img
+                            src="frame.png"
+                            alt="frame"
+                            width="32"
+                            height="32"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span
+                            style="
+                              width: 113px;
+                              height: 53px;
+                              color: white;
+                              background-color: #0766ff;
+                              display: inline-block;
+                              text-align: center;
+                              line-height: 53px;
+                              font-size: 32px;
+                            "
+                            >React</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="align-items: center">
+                          <span style="color: #d5fe00; font-size: 36px"
+                            >სამენტორო პროგრამა</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
                 <tr>
@@ -270,7 +305,23 @@ export async function POST(req) {
                       text-align: center;
                     "
                   >
-                    nugo
+                    <table>
+                      <tr>
+                        <td style="text-align: left; padding-left: 24px">
+                          <span style="display: inline-block; font-size: 36px"
+                            >ციფრული პროდუქტები
+                          </span>
+                        </td>
+                        <td>
+                          <img
+                            src="frame.png"
+                            alt="frame"
+                            width="32"
+                            height="32"
+                          />
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -281,66 +332,6 @@ export async function POST(req) {
     </main>
       `,
 
-      // text: `Hi ${name},\n\nThank you for signing up! We are excited to have you with us.`,
-      // text: `
-      //   <div style="background-color: #f3f4f6; padding: 20px; text-align: center;">
-      //   nugoo
-      //   </div>
-      // `,
-
-      // html: `
-      //   <table role="presentation" width="100%" style="background-color: white; max-width: 1000px; margin: auto;">
-      //     <tr style="padding-bottom: 32px;">
-      //       <td >
-      //         <table role="presentation" width="100%" style="border-spacing: 0;">
-      //           <tr>
-      //             <td width="20%" style="background-color: #D5FE00; height: 8px;"></td>
-      //             <td width="20%" style="background-color: #0766FF; height: 8px;"></td>
-      //             <td width="20%" style="background-color: #F7CA00; height: 8px;"></td>
-      //             <td width="20%" style="background-color: #CDF300; height: 8px;"></td>
-      //             <td width="20%" style="background-color: #FF7D4D; height: 8px;"></td>
-      //           </tr>
-      //         </table>
-      //       </td>
-      //     </tr>
-
-      //      <tr>
-      //         <td align="center">
-      //           <table role="presentation" width="90%" style="max-width: 600px; border-spacing: 0;">
-      //             <tr>
-      //               <!-- Logo Section -->
-      //               <td align="left">
-      //                 <table role="presentation">
-      //                   <tr>
-      //                     <td>
-      //                       <img src="cid:emailLogo" alt="BrightFlow" width="29" height="33" style="display: block;" />
-      //                     </td>
-      //                     <td style="font-size: 24px; font-weight: bold; padding-left: 12px; ">
-      //                       BrightFlow
-      //                     </td>
-      //                   </tr>
-      //                 </table>
-      //               </td>
-
-      //               <!-- Visit Website Section -->
-      //               <td align="right">
-      //                 <table role="presentation">
-      //                   <tr>
-      //                     <td>
-      //                       <span>ეწვიეთ ვებ გვერდს</span>
-      //                     </td>
-      //                     <td>
-      //                       <img src="cid:globeLogo" alt="Bright Flow" style="display: block;" width="24" height="24"/>
-      //                     </td>
-      //                   </tr>
-      //                 </table>
-      //               </td>
-      //             </tr>
-      //           </table>
-      //         </td>
-      //       </tr>
-      //   </table>
-      // `,
       attachments: [
         {
           filename: "brightFlowEmail.png",
@@ -353,13 +344,6 @@ export async function POST(req) {
           cid: "globeLogo",
         },
       ],
-      // attachments: [
-      //   {
-      //     filename: "brightFlowEmail.png",
-      //     path: "public/brightFlowEmail.png",
-      //     cid: "emailLogo",
-      //   },
-      // ],
     });
 
     return new Response(
