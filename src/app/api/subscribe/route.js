@@ -161,50 +161,42 @@ export async function POST(req) {
       </section>
 
       <section style="width: 100%; max-width: 600px; margin: auto">
-        <table style="width: 100%; border: 0">
+        <table style="width: 100%; border-collapse: collapse">
           <tr>
             <td style="width: 50%; padding-right: 8px">
-              <table style="width: 100%; height: 419px">
-                <tr style="width: 100%">
+              <table style="width: 100%; height: 419px; border-spacing: 0">
+                <tr>
                   <td
                     style="
                       height: 33%;
                       background-color: #f7ca00;
                       border-radius: 22px;
                       border-bottom: 8px solid white;
-                      padding-top: 30px;
-                      padding-bottom: 30px;
-                      position: relative;
+                      text-align: left;
+                      padding: 30px;
                     "
                   >
-                    <span
-                      style="
-                        font-size: 36px;
-                        color: white;
-                        padding-left: 24px;
-                        padding-right: 30px;
-                      "
-                      >უფასო
-                    </span>
-                    <span
-                      style="
-                        font-size: 36px;
-                        color: white;
-                        padding-left: 24px;
-                        padding-right: 30px;
-                      "
-                      >მასტერკლასები</span
-                    >
-                    <img
-                      src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
-                      alt="frame"
-                      width="32px"
-                      height="32px"
-                      style="position: absolute; top: 16px; right: 16px"
-                    />
+                    <table style="width: 100%">
+                      <tr>
+                        <td style="font-size: 36px; color: white">უფასო</td>
+                        <td style="text-align: right">
+                          <img
+                            src="frame.png"
+                            alt="frame"
+                            width="32"
+                            height="32"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 36px; color: white">
+                          მასტერკლასები
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
-                <tr style="width: 100%">
+                <tr>
                   <td
                     style="
                       height: 66%;
@@ -212,64 +204,70 @@ export async function POST(req) {
                       border-radius: 28px;
                       border-top: 8px solid white;
                       text-align: center;
-                      position: relative;
                     "
                   >
-                    <img
-                      src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png"
-                      alt="frame"
-                      width="32px"
-                      height="32px"
-                      style="position: absolute; top: 16px; right: 16px"
-                    />
-                    <span
-                      style="
-                        font-size: 36px;
-                        color: white;
-                        display: inline-block;
-                      "
-                      >შემოუერთდი საზოგადოებას
-                    </span>
-                    <span
-                      style="
-                        width: 113px;
-                        height: 50px;
-                        background-color: white;
-                        text-align: center;
-                        line-height: 50px;
-                        display: inline-block;
-                        margin-top: 15px;
-                      "
-                    >
-                      DISCORD
-                    </span>
+                    <table style="width: 100%">
+                      <tr>
+                        <td style="text-align: right; padding: 10px">
+                          <img
+                            src="frame.png"
+                            alt="frame"
+                            width="32"
+                            height="32"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 36px; color: white">
+                          შემოუერთდი საზოგადოებას
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 15px">
+                          <span
+                            style="
+                              width: 113px;
+                              height: 50px;
+                              background-color: white;
+                              display: inline-block;
+                              text-align: center;
+                              line-height: 50px;
+                            "
+                          >
+                            DISCORD
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </td>
+
             <td style="width: 50%; padding-left: 8px">
-              <table style="width: 100%; height: 419px">
-                <tr style="width: 100%">
+              <table style="width: 100%; height: 419px; border-spacing: 0">
+                <tr>
                   <td
                     style="
                       height: 66%;
-                      border-bottom: 8px solid transparent;
                       background-color: #090b0f;
                       border-radius: 28px;
                       border-bottom: 8px solid white;
+                      text-align: center;
+                      color: white;
                     "
                   >
                     nugo
                   </td>
                 </tr>
-                <tr style="width: 100%">
+                <tr>
                   <td
                     style="
                       height: 33%;
-                      border-top: 8px solid transparent;
                       background-color: #d5fe00;
                       border-radius: 22px;
                       border-top: 8px solid white;
+                      text-align: center;
                     "
                   >
                     nugo
