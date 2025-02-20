@@ -216,11 +216,11 @@ export async function POST(req) {
                 style="display: block; text-decoration: none; color: inherit"
               >
                 <img
-                  src="cid:phone"
+                  src="cid:phone-call"
                   alt="phone"
                   width="24"
                   height="24"
-                  style="vertical-align: middle; display: inline"
+                  style="vertical-align: middle; display: inline;"
                 />
                 <span style="padding-left: 12px; font-size: 16px; color: black">დაგვიკავშირდი</span>
               </a>
@@ -462,9 +462,9 @@ export async function POST(req) {
           contentDisposition: "inline",
         },
         {
-          filename: "phone.png",
-          path: "https://bright-flow-two.vercel.app/phone.png",
-          cid: "phone",
+          filename: "phone-call.png",
+          path: "https://bright-flow-two.vercel.app/phone-call.png",
+          cid: "phone-call",
           contentType: "image/png",
           contentDisposition: "inline",
         },
