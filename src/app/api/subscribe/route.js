@@ -66,7 +66,7 @@ export async function POST(req) {
       <body>
       <main style="width: 100%; max-width: 1000px; margin: auto">
       <section style="width: 100%; max-width: 1000px; padding-bottom: 32px">
-        <table style="width: 100%">
+        <table style="width: 100%; border-collapse: collapse">
           <thead style="width: 100%">
             <tr style="width: 100%">
               <th
@@ -367,6 +367,19 @@ export async function POST(req) {
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
+        </table>
+        <table style="width: 100%; border-collapse: collapse">
+          <tr>
+            <td width="33%" style="background-color: #d5fe00; height: 24px">
+              nugo
+            </td>
+            <td width="33%" style="background-color: #3dae70; height: 24px">
+              nugo
+            </td>
+            <td width="33%" style="background-color: #231989; height: 24px">
+              nugo
             </td>
           </tr>
         </table>
