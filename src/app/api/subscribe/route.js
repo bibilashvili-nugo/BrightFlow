@@ -261,10 +261,8 @@ export async function POST(req) {
           width: 100%;
           max-width: 600px;
           margin: auto;
-          padding-bottom: 16px;
           background-color: black;
           padding-top: 15px;
-          padding-bottom: 32px;
           border-radius: 28px 28px 0 0;
         "
       >
@@ -341,25 +339,25 @@ export async function POST(req) {
             <td align="center">
               <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                  <td style="padding-right: 16px;">
+                  <td style="padding-right: 16px; padding-bottom: 32px">
                     <a href="https://www.facebook.com/BrightFloow" style="text-decoration: none; color: inherit">
                       <img src="cid:facebook" 
                            alt="facebook" width="20" height="20" />
                     </a>
                   </td>
-                  <td style="padding: 0 16px">
+                  <td style="padding: 0 16px; padding-bottom: 32px">
                     <a href="https://instagram.com" style="text-decoration: none; color: inherit">
                       <img src="cid:instagram" 
                            alt="instagram" width="20" height="20" />
                     </a>
                   </td>
-                  <td style="padding: 0 16px">
+                  <td style="padding: 0 16px; padding-bottom: 32px">
                     <a href="https://www.linkedin.com/company/brightfloow" style="text-decoration: none; color: inherit">
                       <img src="cid:linkedin" 
                            alt="linkedin" width="20" height="20" />
                     </a>
                   </td>
-                  <td style="padding-left: 16px;">
+                  <td style="padding-left: 16px; padding-bottom: 32px">
                     <a href="https://facebook.com" style="text-decoration: none; color: inherit">
                       <img src="cid:discord" 
                            alt="discord" width="20" height="20" />
