@@ -41,7 +41,6 @@ export default function Home() {
       className="flex flex-col smaller:py-8 items-center justify-center h-full w-full pt-[149px] pb-[14px] md:pt-[104px] md:pb-[43px] 
     xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]"
     >
-      {/* <div className="items-center justify-between"></div> */}
       <div className="flex smaller:gap-4 items-center smaller:pb-8 justify-center gap-5 pb-12 md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
         <Image
           src="/BrightFlowLogo.svg"
@@ -50,8 +49,8 @@ export default function Home() {
           height={100}
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
-        <span className="text-white font-bold smaller:text-xl text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]">
-          BrightFlow
+        <span className="text-white font-bold smaller:text-xl text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px] font-brainMelt">
+          ნუგო
         </span>
       </div>
       <div className="flex flex-col items-center justify-center smaller:gap-3 gap-6 smaller:pb-10 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">

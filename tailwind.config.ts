@@ -16,6 +16,9 @@ export default {
         tiny: { max: "319px" },
         smaller: { min: "320px", max: "479px" },
       },
+      fontFamily: {
+        brainMelt: ["brainMelt"],
+      },
     },
   },
   plugins: [],

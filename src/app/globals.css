@@ -18,6 +18,10 @@ body {
   font-style: normal;
 }
 
+.font-brainMelt {
+  font-family: "brainMelt";
+}
+
 @media (min-width: 1920px) {
   body {
     background-image: url("/bg1920.png");
