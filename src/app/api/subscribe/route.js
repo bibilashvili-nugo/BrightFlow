@@ -53,7 +53,8 @@ export async function POST(req) {
 
     // Send a welcome email to the user
     await transporter.sendMail({
-      from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
+      // from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
+      form: "BrightFlow",
       to: email,
       subject: "გვიხარია რომ შემოგვიერთდი!",
 
@@ -338,25 +339,25 @@ export async function POST(req) {
                 <tr>
                   <td style="padding-right: 16px;">
                     <a href="https://www.facebook.com/BrightFloow" style="text-decoration: none; color: inherit">
-                      <img src="cid: facebook" 
+                      <img src="cid:facebookIcon" 
                            alt="facebook" width="20" height="20" />
                     </a>
                   </td>
                   <td style="padding: 0 16px">
                     <a href="https://instagram.com" style="text-decoration: none; color: inherit">
-                      <img src="cid: instagram" 
+                      <img src="cid:instagram" 
                            alt="instagram" width="20" height="20" />
                     </a>
                   </td>
                   <td style="padding: 0 16px">
                     <a href="https://www.linkedin.com/company/brightfloow" style="text-decoration: none; color: inherit">
-                      <img src="cid: linkedin" 
+                      <img src="cid:linkedin" 
                            alt="linkedin" width="20" height="20" />
                     </a>
                   </td>
                   <td style="padding-left: 16px;">
                     <a href="https://facebook.com" style="text-decoration: none; color: inherit">
-                      <img src="cid: discord" 
+                      <img src="cid:discord" 
                            alt="discord" width="20" height="20" />
                     </a>
                   </td>
@@ -411,30 +412,30 @@ export async function POST(req) {
         {
           filename: "facebook.png",
           path: "https://bright-flow-two.vercel.app/facebook.png",
-          cid: "facebook",
-          // contentType: "image/png",
-          // contentDisposition: "inline",
+          cid: "facebookIcon",
+          contentType: "image/png",
+          contentDisposition: "inline",
         },
         {
           filename: "instagram.png",
           path: "https://bright-flow-two.vercel.app/instagram.png",
           cid: "instagram",
-          // contentType: "image/png",
-          // contentDisposition: "inline",
+          contentType: "image/png",
+          contentDisposition: "inline",
         },
         {
           filename: "linkedin.png",
           path: "https://bright-flow-two.vercel.app/linkedin.png",
           cid: "linkedin",
-          // contentType: "image/png",
-          // contentDisposition: "inline",
+          contentType: "image/png",
+          contentDisposition: "inline",
         },
         {
           filename: "discord.png",
           path: "https://bright-flow-two.vercel.app/discord.png",
           cid: "discord",
-          // contentType: "image/png",
-          // contentDisposition: "inline",
+          contentType: "image/png",
+          contentDisposition: "inline",
         },
       ],
     });
