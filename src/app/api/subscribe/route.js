@@ -55,7 +55,7 @@ export async function POST(req) {
     await transporter.sendMail({
       from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
       to: email,
-      subject: "Welcome!",
+      subject: "გვიხარია რომ შემოგვიერთდი!",
 
       html: `
       <html>
@@ -222,7 +222,7 @@ export async function POST(req) {
                   height="24"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="padding-left: 12px; font-size: 16px">დაგვიკავშირდი</span>
+                <span style="padding-left: 12px; font-size: 16px; color: black">დაგვიკავშირდი</span>
               </a>
             </td>
 
@@ -249,8 +249,88 @@ export async function POST(req) {
                   height="24"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="padding-left: 12px">ვებ-გვერდი</span>
+                <span style="padding-left: 12px; color: black">ვებ-გვერდი</span>
               </a>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section
+        style="
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          padding-bottom: 16px;
+          background-color: black;
+          padding: 0 25px;
+          padding-top: 15px;
+          padding-bottom: 32px;
+          border-radius: 28px 28px 0 0;
+        "
+      >
+        <table style="width: 100%">
+          <tr style="width: 100%; text-align: center">
+            <td
+              style="
+                font-size: 18px;
+                font-weight: normal;
+                width: 100%;
+                color: white;
+                padding: 25.5px 194px;
+              "
+            >
+              რა არის BrightFlow
+            </td>
+          </tr>
+
+          <tr style="width: 100%; text-align: center">
+            <td
+              style="
+                font-size: 18px;
+                font-weight: normal;
+                color: white;
+                padding: 25.5px 82.5px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              გაიგე დეტალურად სამენტორო პროგრამაზე
+            </td>
+          </tr>
+          <tr style="width: 100%; text-align: center">
+            <td
+              style="
+                font-size: 18px;
+                font-weight: normal;
+                color: white;
+                padding: 25.5px 112px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              გაიგე დეტალურად კურსების შესახებ
+            </td>
+          </tr>
+          <tr style="width: 100%; text-align: center">
+            <td>
+              <span
+                style="
+                  display: inline-block;
+                  font-size: 14px;
+                  color: rgba(255, 255, 255, 0.6);
+                "
+                >ჩვენთან, ყველაფერია, რათა თქვენი გზა წარმატებისკენ უფრო მოკლე
+                და მიზანმიმართული იყოს!</span
+              >
+              <span
+                style="
+                  display: inline-block;
+                  font-size: 14px;
+                  color: rgba(255, 255, 255, 0.6);
+                "
+                >არ გამოტოვოთ ჩვენი მომავალ კვირეულები და პროგრამები.
+                გველოდებით!</span
+              >
             </td>
           </tr>
         </table>
