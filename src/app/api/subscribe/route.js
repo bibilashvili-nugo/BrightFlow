@@ -374,12 +374,43 @@ export async function POST(req) {
             <td width="33%" style="background-color: #0766FF; height: 24px"></td>
             <td width="33%" style="background-color: #F7CA00; height: 24px"></td>
           </tr>
+        </table>
+        <table
+          style="
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+          "
+        >
           <tr>
-            <td width="20%" style="background-color: #F7BFB4; height: 24px"></td>
-            <td width="20%" style="background-color: #FFFFFF; height: 24px"></td>
-            <td width="20%" style="background-color: #FF7D4D; height: 24px"></td>
-            <td width="20%" style="background-color: #9CB5F7; height: 24px"></td>
-            <td width="20%" style="background-color: #CDF300; height: 24px"></td>
+            <td
+              width="20%"
+              style="
+                background-color: #f7bfb4;
+                height: 24px;
+                border-bottom-left-radius: 30px;
+              "
+            ></td>
+            <td
+              width="20%"
+              style="background-color: #ffffff; height: 24px"
+            ></td>
+            <td
+              width="20%"
+              style="background-color: #ff7d4d; height: 24px"
+            ></td>
+            <td
+              width="20%"
+              style="background-color: #9cb5f7; height: 24px"
+            ></td>
+            <td
+              width="20%"
+              style="
+                background-color: #cdf300;
+                height: 24px;
+                border-bottom-right-radius: 30px;
+              "
+            ></td>
           </tr>
         </table>
       </section>
