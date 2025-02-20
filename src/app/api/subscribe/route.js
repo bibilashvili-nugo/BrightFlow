@@ -342,11 +342,15 @@ export async function POST(req) {
           filename: "brightFlowEmail.png",
           path: "https://bright-flow-two.vercel.app/brightFlowEmail.png",
           cid: "emailLogo",
+          contentType: "image/png",
+          contentDisposition: "inline",
         },
         {
           filename: "thankYou.jpg",
           path: "https://bright-flow-two.vercel.app/thankYou.jpg",
           cid: "thankYou",
+          contentType: "image/jpg",
+          contentDisposition: "inline",
         },
       ],
     });
