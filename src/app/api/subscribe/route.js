@@ -332,6 +332,38 @@ export async function POST(req) {
               >
             </td>
           </tr>
+          <tr>
+            <td align="center">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td style="padding-right: 16px;">
+                    <a href="https://www.facebook.com/BrightFloow" style="text-decoration: none; color: inherit">
+                      <img src="cid: facebook" 
+                           alt="facebook" width="20" height="20" />
+                    </a>
+                  </td>
+                  <td style="padding: 0 16px">
+                    <a href="https://instagram.com" style="text-decoration: none; color: inherit">
+                      <img src="cid: instagram" 
+                           alt="instagram" width="20" height="20" />
+                    </a>
+                  </td>
+                  <td style="padding: 0 16px">
+                    <a href="https://www.linkedin.com/company/brightfloow" style="text-decoration: none; color: inherit">
+                      <img src="cid: linkedin" 
+                           alt="linkedin" width="20" height="20" />
+                    </a>
+                  </td>
+                  <td style="padding-left: 16px;">
+                    <a href="https://facebook.com" style="text-decoration: none; color: inherit">
+                      <img src="cid: discord" 
+                           alt="discord" width="20" height="20" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
       </section>
       
@@ -373,6 +405,34 @@ export async function POST(req) {
           filename: "web.png",
           path: "https://bright-flow-two.vercel.app/web.png",
           cid: "web",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "facebook.png",
+          path: "https://bright-flow-two.vercel.app/facebook.png",
+          cid: "facebook",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "instagram.png",
+          path: "https://bright-flow-two.vercel.app/instagram.png",
+          cid: "instagram",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "linkedin.png",
+          path: "https://bright-flow-two.vercel.app/linkedin.png",
+          cid: "linkedin",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "discord.png",
+          path: "https://bright-flow-two.vercel.app/discord.png",
+          cid: "discord",
           contentType: "image/png",
           contentDisposition: "inline",
         },
