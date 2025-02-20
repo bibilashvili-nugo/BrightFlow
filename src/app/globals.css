@@ -19,7 +19,7 @@ body {
 }
 
 .font-brainMelt {
-  font-family: "brainMelt";
+  font-family: "brainMelt", sans-serif !important;
 }
 
 @media (min-width: 1920px) {
