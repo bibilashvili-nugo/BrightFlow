@@ -263,13 +263,12 @@ export async function POST(req) {
           margin: auto;
           padding-bottom: 16px;
           background-color: black;
-          padding: 0 25px;
           padding-top: 15px;
           padding-bottom: 32px;
           border-radius: 28px 28px 0 0;
         "
       >
-        <table style="width: 100%">
+        <table style="width: 100%; max-width: 600px; padding: 0 25px;">
           <tr style="width: 100%; text-align: center">
             <td
               style="
