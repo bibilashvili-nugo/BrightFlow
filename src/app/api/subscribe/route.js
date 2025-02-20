@@ -98,7 +98,7 @@ export async function POST(req) {
         <table style="width: 100%; padding: 26.5px 0">
           <tbody style="width: 100%">
             <tr style="width: 100%">
-              <td align="left">
+              <td>
                 <img
                   src="cid:emailLogo"
                   alt="BrightFlow Logo"
@@ -132,7 +132,7 @@ export async function POST(req) {
             <td align="left">
               <img src="cid:thankYou"
                 alt="მადლობა გამოწერისთვის" 
-                width="400px" 
+                width="100%" 
                 style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
             </td>
           </tr>
