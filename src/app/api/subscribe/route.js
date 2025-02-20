@@ -346,10 +346,10 @@ export async function POST(req) {
           contentDisposition: "inline",
         },
         {
-          filename: "thankYou.jpg",
-          path: "https://bright-flow-two.vercel.app/thankYou.jpg",
+          filename: "thankYou.png",
+          path: "https://bright-flow-two.vercel.app/thankYou.png",
           cid: "thankYou",
-          contentType: "image/jpg",
+          contentType: "image/png",
           contentDisposition: "inline",
         },
       ],
