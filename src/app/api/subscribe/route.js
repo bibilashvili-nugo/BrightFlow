@@ -199,16 +199,17 @@ export async function POST(req) {
           padding-bottom: 16px;
         "
       >
-        <table style="width: 100%; border-collapse: separate">
-          <tr style="width: 100%">
+        <table
+          style="width: 100%; border-collapse: separate; border-spacing: 0"
+        >
+          <tr style="text-align: center">
             <td
-              align="left"
               style="
                 border: 2px solid #d1d1d1;
-                border-radius: 16px;
                 width: 48%;
-                text-align: center;
-                padding: 18px 66px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                border-radius: 16px;
               "
             >
               <a
@@ -220,22 +221,28 @@ export async function POST(req) {
                   alt="phone"
                   width="24"
                   height="24"
-                  style="vertical-align: middle; display: inline;"
+                  style="vertical-align: middle; display: inline"
                 />
-                <span style="padding-left: 12px; font-size: 16px; color: black">დაგვიკავშირდი</span>
-              </a>
+                <span
+                  style="
+                    padding-left: 12px;
+                    font-size: 16px;
+                    color: black;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >დაგვიკავშირდი</span
+                ></a
+              >
             </td>
-
             <td style="width: 4%"></td>
-
             <td
-              align="right"
               style="
                 border: 2px solid #d1d1d1;
-                border-radius: 16px;
                 width: 48%;
-                text-align: center;
-                padding: 18px 66px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                border-radius: 16px;
               "
             >
               <a
@@ -249,8 +256,17 @@ export async function POST(req) {
                   height="24"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="padding-left: 12px; color: black">ვებ-გვერდი</span>
-              </a>
+                <span
+                  style="
+                    padding-left: 12px;
+                    color: black;
+                    font-size: 16px;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >ვებ-გვერდი</span
+                ></a
+              >
             </td>
           </tr>
         </table>
