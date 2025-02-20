@@ -370,15 +370,16 @@ export async function POST(req) {
         </table>
         <table style="width: 100%; border-collapse: collapse">
           <tr>
-            <td width="33%" style="background-color: #d5fe00; height: 24px">
-              nugo
-            </td>
-            <td width="33%" style="background-color: #3dae70; height: 24px">
-              nugo
-            </td>
-            <td width="33%" style="background-color: #231989; height: 24px">
-              nugo
-            </td>
+            <td width="33%" style="background-color: #D5FE00; height: 24px"></td>
+            <td width="33%" style="background-color: #0766FF; height: 24px"></td>
+            <td width="33%" style="background-color: #F7CA00; height: 24px"></td>
+          </tr>
+          <tr>
+            <td width="20%" style="background-color: #F7BFB4; height: 24px"></td>
+            <td width="20%" style="background-color: #FFFFFF; height: 24px"></td>
+            <td width="20%" style="background-color: #FF7D4D; height: 24px"></td>
+            <td width="20%" style="background-color: #9CB5F7; height: 24px"></td>
+            <td width="20%" style="background-color: #CDF300; height: 24px"></td>
           </tr>
         </table>
       </section>
