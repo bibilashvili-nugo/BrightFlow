@@ -193,24 +193,57 @@ export async function POST(req) {
           padding-bottom: 16px;
         "
       >
-        <table style="width: 100%">
+        <table style="width: 100%; border-collapse: separate">
           <tr style="width: 100%">
-            <td align="left">
+            <td
+              align="left"
+              style="
+                border: 2px solid #d1d1d1;
+                border-radius: 16px;
+                width: 48%;
+                text-align: center;
+                padding: 18px 66px;
+              "
+            >
               <a
                 href="tel:+1234567890"
                 style="display: block; text-decoration: none; color: inherit"
               >
-                <img src="cid:phone-call" alt="phone" width="24" height="24" />
-                <span>დაგვიკავშირდი</span>
+                <img
+                  src="cid:phone-call"
+                  alt="phone"
+                  width="24"
+                  height="24"
+                  style="vertical-align: middle; display: inline"
+                />
+                <span style="padding-left: 12px">დაგვიკავშირდი</span>
               </a>
             </td>
-            <td align="right">
+
+            <td style="width: 4%"></td>
+
+            <td
+              align="right"
+              style="
+                border: 2px solid #d1d1d1;
+                border-radius: 16px;
+                width: 48%;
+                text-align: center;
+                padding: 18px 66px;
+              "
+            >
               <a
                 href="https://bright-flow-two.vercel.app/"
                 style="display: block; text-decoration: none; color: inherit"
               >
-                <img src="" alt="web-page" width="24" height="24" />
-                <span>ვებ-გვერდი</span>
+                <img
+                  src="cid:web"
+                  alt="web-page"
+                  width="24"
+                  height="24"
+                  style="vertical-align: middle; display: inline"
+                />
+                <span style="padding-left: 12px">ვებ-გვერდი</span>
               </a>
             </td>
           </tr>
@@ -246,6 +279,13 @@ export async function POST(req) {
           filename: "phone-call.png",
           path: "https://bright-flow-two.vercel.app/phone-call.png",
           cid: "phone-call",
+          contentType: "image/png",
+          contentDisposition: "inline",
+        },
+        {
+          filename: "web.png",
+          path: "https://bright-flow-two.vercel.app/web.png",
+          cid: "web",
           contentType: "image/png",
           contentDisposition: "inline",
         },
