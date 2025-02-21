@@ -114,7 +114,7 @@ export default function Home() {
         <button
           type="submit"
           className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
-        w-[332px] md:w-[530px] xl:w-[150px] xl:hidden"
+        w-[332px] md:w-[530px] xl:w-[150px] xl:hidden focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
         >
           Join the waitlist
         </button>
