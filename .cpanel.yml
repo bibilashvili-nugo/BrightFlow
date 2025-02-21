@@ -1,8 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hs0003173/repositories/BrightFlow
-    - cd $DEPLOYPATH && git pull origin main
-    - cd $DEPLOYPATH && npm install --omit=dev
-    - cd $DEPLOYPATH && npm run build
-    - cd $DEPLOYPATH && pm2 restart nextjs-app || pm2 start npm --name "nextjs-app" -- start
+    - export DEPLOYPATH=/home/hs0003173/public_html/
+    - /bin/cp -R images $DEPLOYPATH
+    # - export DEPLOYPATH=/home/hs0003173/repositories/BrightFlow
+    # - export DEPLOYPATH=/home/hs0003173/public_html/
+    # - cd $DEPLOYPATH && git pull origin main
+    # - cd $DEPLOYPATH && npm install --omit=dev
+    # - cd $DEPLOYPATH && npm run build
+    # - cd $DEPLOYPATH && pm2 restart nextjs-app || pm2 start npm --name "nextjs-app" -- start
