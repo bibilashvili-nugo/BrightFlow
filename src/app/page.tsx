@@ -1,5 +1,6 @@
 "use client";
 
+import MessageBox from "@/components/messageBox";
 import Image from "next/image";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -9,6 +10,10 @@ export default function Home() {
     email: "",
   });
   const [status, setStatus] = useState<string>("");
+  const [checkStatus, setCheckStatus] = useState<boolean | undefined>(
+    undefined
+  );
+  const [email, setEmail] = useState<string>("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,6 +21,7 @@ export default function Home() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setEmail(formData.email);
     setStatus("Sending...");
     try {
       const res = await fetch("/api/subscribe", {
@@ -27,14 +33,19 @@ export default function Home() {
       if (res.ok) {
         setStatus("Thank you for signing up!");
         setFormData({ name: "", email: "" });
+        setCheckStatus(true);
       } else {
         setStatus(`Error: ${data.error}`);
+        setCheckStatus(false);
       }
     } catch (error) {
       console.error(error);
       setStatus("An unexpected error occurred.");
+      setCheckStatus(false);
     }
   };
+
+  console.log(formData.email);
 
   return (
     <div
@@ -74,7 +85,7 @@ export default function Home() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center gap-6 smaller:pb-10 pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-[92px]"
+        className="flex flex-col justify-center items-center gap-6 smaller:pb-10 pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-9"
       >
         <div className="hidden xl:block">
           <p className="text-[#A0A2A6] font-normal xl:text-[13px] 2xl:text-base">
@@ -111,6 +122,9 @@ export default function Home() {
             Join the waitlist
           </button>
         </div>
+        <div className="hidden xl:block">
+          <MessageBox checkStatus={checkStatus} email={email} />
+        </div>
         <button
           type="submit"
           className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
@@ -119,7 +133,7 @@ export default function Home() {
           Join the waitlist
         </button>
       </form>
-      {status && <p className="text-white mt-4">{status}</p>}
+      {/* {status && <p className="text-white mt-4">{status}</p>} */}
       <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
         <a href="https://www.facebook.com/BrightFloow" target="_blank">
           <div
