@@ -53,7 +53,7 @@ export async function POST(req) {
 
     // Send a welcome email to the user
     await transporter.sendMail({
-      from: `"Welcome" <${SMTP_USER}>`, // Use your email address for consistency
+      from: `"BrightFlow" <${SMTP_USER}>`, // Use your email address for consistency
       to: email,
       subject: "გვიხარია რომ შემოგვიერთდი!",
 
@@ -374,7 +374,7 @@ export async function POST(req) {
                     </a>
                   </td>
                   <td style="padding-left: 16px; padding-bottom: 32px">
-                    <a href="https://facebook.com" style="text-decoration: none; color: inherit">
+                    <a href="https://discord.gg/9uNkMpqdwS" style="text-decoration: none; color: inherit">
                       <img src="cid:discord" 
                            alt="discord" width="20" height="20" />
                     </a>

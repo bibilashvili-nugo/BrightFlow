@@ -49,8 +49,8 @@ export default function Home() {
           height={100}
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
-        <span className="text-white font-bold smaller:text-xl text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px] font-brainMelt">
-          ნუგო
+        <span className="text-white font-bold smaller:text-xl text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]">
+          BrightFlow
         </span>
       </div>
       <div className="flex flex-col items-center justify-center smaller:gap-3 gap-6 smaller:pb-10 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
@@ -105,7 +105,8 @@ export default function Home() {
           />
           <button
             type="submit"
-            className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block"
+            className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block hover:bg-[#042BCE]
+            focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
           >
             Join the waitlist
           </button>
@@ -120,85 +121,95 @@ export default function Home() {
       </form>
       {status && <p className="text-white mt-4">{status}</p>}
       <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
-        <div
-          className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        <a href="https://www.facebook.com/BrightFloow" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
         w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-        >
-          <Image
-            src="/facebook.svg"
-            alt="facebook"
-            width={24}
-            height={24}
-            className="xl:w-8 xl:h-8"
-          />
-          <div className="xl:flex xl:flex-col xl:justify-between">
-            <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-              Facebook
-            </p>
-            <p className="text-white text-sm font-semibold 2xl:text-base">
-              @BrightFlow
-            </p>
+          >
+            <Image
+              src="/facebook.svg"
+              alt="facebook"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Facebook
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        </a>
+        <a href="https://www.linkedin.com/company/brightfloow" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
         w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-        >
-          <Image
-            src="/linkedin.svg"
-            alt="linkedin"
-            width={24}
-            height={24}
-            className="xl:w-8 xl:h-8"
-          />
-          <div className="xl:flex xl:flex-col xl:justify-between">
-            <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-              Linkedin
-            </p>
-            <p className="text-white text-sm font-semibold 2xl:text-base">
-              @BrightFlow
-            </p>
+          >
+            <Image
+              src="/linkedin.svg"
+              alt="linkedin"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Linkedin
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
         w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-        >
-          <Image
-            src="/instagram.svg"
-            alt="instagram"
-            width={24}
-            height={24}
-            className="xl:w-8 xl:h-8"
-          />
+          >
+            <Image
+              src="/instagram.svg"
+              alt="instagram"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
 
-          <div className="xl:flex xl:flex-col xl:justify-between">
-            <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-              Instagram
-            </p>
-            <p className="text-white text-sm font-semibold 2xl:text-base">
-              @BrightFlow
-            </p>
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Instagram
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
-        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-        >
-          <Image
-            src="/discord.svg"
-            alt="discord"
-            width={24}
-            height={24}
-            className="xl:w-8 xl:h-8"
-          />
-          <div className="xl:flex xl:flex-col xl:justify-between">
-            <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">Discord</p>
-            <p className="text-white text-sm font-semibold 2xl:text-base">
-              @BrightFlow
-            </p>
+        </a>
+        <a href="https://discord.gg/9uNkMpqdwS" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+           w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
+          >
+            <Image
+              src="/discord.svg"
+              alt="discord"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Discord
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
