@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/hs0003173/public_html/
     - cd $DEPLOYPATH && git pull origin main
     - cd $DEPLOYPATH && npm install --omit=dev
     - cd $DEPLOYPATH && npm run build
