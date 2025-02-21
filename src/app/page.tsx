@@ -9,7 +9,7 @@ export default function Home() {
     name: "",
     email: "",
   });
-  const [status, setStatus] = useState<string>("");
+  // const [status, setStatus] = useState<string>("");
   const [checkStatus, setCheckStatus] = useState<boolean | undefined>(
     undefined
   );
@@ -22,25 +22,25 @@ export default function Home() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmail(formData.email);
-    setStatus("Sending...");
+    // setStatus("Sending...");
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      const data = await res.json();
+      // const data = await res.json();
       if (res.ok) {
-        setStatus("Thank you for signing up!");
+        // setStatus("Thank you for signing up!");
         setFormData({ name: "", email: "" });
         setCheckStatus(true);
       } else {
-        setStatus(`Error: ${data.error}`);
+        // setStatus(`Error: ${data.error}`);
         setCheckStatus(false);
       }
     } catch (error) {
       console.error(error);
-      setStatus("An unexpected error occurred.");
+      // setStatus("An unexpected error occurred.");
       setCheckStatus(false);
     }
   };
