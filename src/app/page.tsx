@@ -103,7 +103,7 @@ export default function Home() {
             placeholder="Full Name"
             className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
             placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
-            w-[332px] md:w-[530px] xl:w-[269px]"
+            w-[332px] md:w-[530px] xl:w-[269px] hover:border-[2px] focus:border-[#002FEF] focus:border-[2px] transition-colors duration-300"
           />
           <input
             name="email"

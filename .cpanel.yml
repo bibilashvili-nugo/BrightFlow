@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -r .next/static $DEPLOYPATH/static
+    - /bin/cp -r .next/standalone $DEPLOYPATH/
+    - /bin/cp -r public $DEPLOYPATH/
+    - /bin/cp package.json $DEPLOYPATH/
+    - cd $DEPLOYPATH && npm install --omit=dev
