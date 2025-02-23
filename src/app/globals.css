@@ -1,45 +1,21 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
 body {
-  background-color: #090b0f;
-  background-image: url("/bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-@font-face {
-  font-family: "brainMelt";
-  src: url("/fonts/brainMelt.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.font-brainMelt {
-  font-family: "brainMelt", sans-serif !important;
-}
-
-@media (min-width: 1920px) {
-  body {
-    background-image: url("/bg1920.png");
-  }
-}
-
-@media (min-width: 1248px) and (max-width: 1919px) {
-  body {
-    background-image: url("/bg1280Plus.svg");
-  }
-}
-
-@media (min-width: 744px) and (max-width: 1247px) {
-  body {
-    background-image: url("/bg768Plus.svg");
-  }
-}
-
-@media (min-width: 480px) and (max-width: 743px) {
-  body {
-    background-image: url("/bg480Plus.svg");
-  }
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
