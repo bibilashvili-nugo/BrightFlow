@@ -12,13 +12,6 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      screens: {
-        tiny: { max: "319px" },
-        smaller: { min: "320px", max: "479px" },
-      },
-      fontFamily: {
-        brainMelt: ["brainMelt"],
-      },
     },
   },
   plugins: [],
