@@ -1,101 +1,230 @@
+"use client";
+
+import MessageBox from "@/components/messageBox";
 import Image from "next/image";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [formData, setFormData] = useState<{ name: string; email: string }>({
+    name: "",
+    email: "",
+  });
+  // const [status, setStatus] = useState<string>("");
+  const [checkStatus, setCheckStatus] = useState<boolean | undefined>(
+    undefined
+  );
+  const [email, setEmail] = useState<string>("");
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setEmail(formData.email);
+    // setStatus("Sending...");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      // const data = await res.json();
+      if (res.ok) {
+        // setStatus("Thank you for signing up!");
+        setFormData({ name: "", email: "" });
+        setCheckStatus(true);
+      } else {
+        // setStatus(`Error: ${data.error}`);
+        setCheckStatus(false);
+      }
+    } catch (error) {
+      console.error(error);
+      // setStatus("An unexpected error occurred.");
+      setCheckStatus(false);
+    }
+  };
+
+  console.log(formData.email);
+
+  return (
+    <div
+      className="flex flex-col smaller:py-8 items-center justify-center h-full w-full pt-[149px] pb-[14px] md:pt-[104px] md:pb-[43px] 
+    xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]"
+    >
+      <div className="flex smaller:gap-4 items-center smaller:pb-8 justify-center gap-5 pb-12 md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
+        <Image
+          src="/BrightFlowLogo.svg"
+          alt="Bright Flow"
+          width={100}
+          height={100}
+          className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
+        />
+        <span className="text-white font-bold smaller:text-xl text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]">
+          BrightFlow
+        </span>
+      </div>
+      <div className="flex flex-col items-center justify-center smaller:gap-3 gap-6 smaller:pb-10 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
+        <div className="flex flex-col items-center justify-center">
+          <p
+            className="text-[#A0A2A6] font-normal smaller:text-xl text-2xl md:text-[28px] xl:text-[40px] xl:leading-[48px]
+          2xl:text-[44px] 2xl:leading-[53px]"
+          >
+            Join the waitlist for
+          </p>
+          <h1
+            className="bg-gradient-to-r from-[#C0CEFF] to-[#FF6D35] bg-clip-text text-transparent smaller:text-xl font-bold text-2xl
+          md:text-[28px] xl:text-[40px] xl:leading-[48px] 2xl:text-[44px] 2xl:leading-[53px]"
+          >
+            The Digital Product Community
+          </h1>
+        </div>
+        <p className="text-[#A0A2A6] text-sm font-normal xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
+          Illuminating the Path to Tomorrow
+        </p>
+      </div>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col justify-center items-center gap-6 smaller:pb-10 pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-9"
+      >
+        <div className="hidden xl:block">
+          <p className="text-[#A0A2A6] font-normal xl:text-[13px] 2xl:text-base">
+            Launching in May 2025
+          </p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-4 xl:flex-row">
+          <p className="text-[#A0A2A6] font-normal text-xs xl:hidden">
+            Launching in May 2025
+          </p>
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Full Name"
+            className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+            placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
+            w-[332px] md:w-[530px] xl:w-[269px] hover:border-[2px] focus:border-[#002FEF] focus:border-[2px] transition-colors duration-300"
+          />
+          <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="name@email.com"
+            className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+            placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
+            w-[332px] md:w-[530px] xl:w-[269px]"
+          />
+          <button
+            type="submit"
+            className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block hover:bg-[#042BCE]
+            focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
+          >
+            Join the waitlist
+          </button>
+        </div>
+        <div className="hidden xl:block">
+          <MessageBox checkStatus={checkStatus} email={email} />
+        </div>
+        <button
+          type="submit"
+          className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
+        w-[332px] md:w-[530px] xl:w-[150px] xl:hidden focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
+        >
+          Join the waitlist
+        </button>
+      </form>
+      {/* {status && <p className="text-white mt-4">{status}</p>} */}
+      <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
+        <a href="https://www.facebook.com/BrightFloow" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/facebook.svg"
+              alt="facebook"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Facebook
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/company/brightfloow" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+            <Image
+              src="/linkedin.svg"
+              alt="linkedin"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Linkedin
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
+          </div>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+        <a href="https://www.instagram.com/" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
+          >
+            <Image
+              src="/instagram.svg"
+              alt="instagram"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Instagram
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
+          </div>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+        <a href="https://discord.gg/9uNkMpqdwS" target="_blank">
+          <div
+            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
+           w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
+          >
+            <Image
+              src="/discord.svg"
+              alt="discord"
+              width={24}
+              height={24}
+              className="xl:w-8 xl:h-8"
+            />
+            <div className="xl:flex xl:flex-col xl:justify-between">
+              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
+                Discord
+              </p>
+              <p className="text-white text-sm font-semibold 2xl:text-base">
+                @BrightFlow
+              </p>
+            </div>
+          </div>
         </a>
-      </footer>
+      </div>
     </div>
   );
 }
