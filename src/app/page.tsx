@@ -55,11 +55,11 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full pt-[149px] pb-[14px] md:pt-[104px] md:pb-[43px] 
+      className="flex flex-col items-center justify-center w-full md:pt-[104px] md:pb-[43px] 
     xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]
-    smaller:pt-[32px] smaller:pb-6 smaller:px-4"
+    smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
-      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-12 md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
+      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -67,13 +67,16 @@ export default function Home() {
           height={100}
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
-        <span className="text-white font-innerDisplayBold smaller:text-xl smaller:line-height-auto text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]">
+        <span
+          className="text-white font-innerDisplayBold smaller:text-xl line-height-auto text-2xl 
+        xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]"
+        >
           BrightFlow
         </span>
       </div>
       <div className="flex flex-col items-center justify-center smaller:gap-4 gap-6 smaller:pb-11 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
         <p
-          className="text-[#A0A2A6] font-innerDisplayLight smaller:text-sm smaller:line-height-auto text-2xl leading-[29px]
+          className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
             md:text-[28px] md:leading-[34px] xl:text-[40px] xl:leading-[48px]
           2xl:text-[44px] 2xl:leading-[53px]"
         >
@@ -96,9 +99,14 @@ export default function Home() {
             საზოგადოების წევრი
           </span>
         </div>
-        <p className="text-[#A0A2A6] text-sm font-innerDisplayLight smaller:line-height-auto xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
-          და მოემზადე ახალი გამოცდილებისითვის
-        </p>
+        <div className="flex flex-col">
+          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight smaller:line-height-auto xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
+            და მოემზადე ახალი
+          </p>
+          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight smaller:line-height-auto xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
+            გამოცდილებისითვის
+          </p>
+        </div>
       </div>
       <form
         onSubmit={handleSubmit}

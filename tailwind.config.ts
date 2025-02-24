@@ -18,8 +18,8 @@ export default {
       },
       fontFamily: {
         brainMelt: ["brainMelt"],
-        innerDisplayRegular: ["InerDisplay-regular"],
-        innerDisplayLight: ["InerDisplay-light"],
+        innerDisplayRegular: ["InterDisplay-regular"],
+        innerDisplayLight: ["InterDisplay-Light"],
         innerDisplayMedium: ["InterDisplay-medium"],
         innerDisplayBold: ["InterDisplay-bold"],
         innerDisplaySemiBold: ["InterDisplay-SemiBold"],

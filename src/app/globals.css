@@ -19,16 +19,9 @@ body {
 }
 
 @font-face {
-  font-family: "InerDisplay-light";
-  src: url("/fonts/InerDisplay-light.ttf") format("opentype");
+  font-family: "InterDisplay-Light";
+  src: url("/fonts/InterDisplay-Light.ttf") format("truetype");
   font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "InerDisplay-regular";
-  src: url("/fonts/InterDisplay-Regular.ttf") format("opentype");
-  font-weight: normal;
   font-style: normal;
 }
 
