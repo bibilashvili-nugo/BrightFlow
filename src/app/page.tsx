@@ -55,11 +55,11 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full md:pt-[104px] md:pb-[43px] 
+      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] 
     xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]
     smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
-      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-[62px] xl:pb-[68px] 2xl:pb-[92px]">
+      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[68px] 2xl:pb-[92px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -74,10 +74,10 @@ export default function Home() {
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
+      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[92px]">
         <p
           className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
-            md:text-[28px] md:leading-[34px] xl:text-[40px] xl:leading-[48px]
+          xl:text-[40px] xl:leading-[48px]
           2xl:text-[44px] 2xl:leading-[53px]"
         >
           წინასწარი რეგისტრაცია დაიწყო!
@@ -94,10 +94,10 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl">
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px]">
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl">
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px]">
             საზოგადოების წევრი
           </span>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-9"
+        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] md:pb-[60px] xl:flex-col xl:gap-[16px] xl:pb-9"
       >
         <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4">
           დასაწყისი - მაისი 2025
