@@ -74,7 +74,7 @@ export default function Home() {
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center smaller:gap-4 gap-6 smaller:pb-11 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
+      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
         <p
           className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
             md:text-[28px] md:leading-[34px] xl:text-[40px] xl:leading-[48px]
@@ -82,7 +82,7 @@ export default function Home() {
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
-        <div className="flex flex-col justify-center items-center">
+        <div className="smaller:flex flex-col justify-center items-center hidden">
           {/* <h1
             className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto text-2xl
           md:text-[28px] xl:text-[40px] xl:leading-[48px] 2xl:text-[44px] 2xl:leading-[53px]"
@@ -99,20 +99,31 @@ export default function Home() {
             საზოგადოების წევრი
           </span>
         </div>
-        <div className="flex flex-col">
-          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight smaller:line-height-auto xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
+        <div className="flex flex-col justify-center items-center smaller:hidden">
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl">
+            გახდი ციფრული პროდუქტების
+          </span>
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl">
+            საზოგადოების წევრი
+          </span>
+        </div>
+        <div className="smaller:flex flex-col hidden">
+          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
             და მოემზადე ახალი
           </p>
-          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight smaller:line-height-auto xl:text-base 2xl:text-[24px] 2xl:leading-[29px]">
+          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
             გამოცდილებისითვის
           </p>
         </div>
+        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
+          და მოემზადე ახალი გამოცდილებისითვის
+        </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[58px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-9"
+        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] md:pb-[62px] xl:flex-col xl:gap-[16px] xl:pb-9"
       >
-        <p className="text-[#A0A2A6] smaller:text-xs smaller:line-height-auto font-innerDisplayRegular">
+        <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4">
           დასაწყისი - მაისი 2025
         </p>
         <div className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row">
@@ -124,16 +135,18 @@ export default function Home() {
             email={formData.email}
             onChange={handleChange}
           />
-          <Button
-            text="პრე-რეგისტრაცია"
-            className="smaller:w-[288px] h-12 rounded-[8px] font-innerDisplaySemiBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
-             w-[332px] md:w-[530px] xl:w-[150px]"
-          />
+          <div className="smaller:pb-0 pb-4">
+            <Button
+              text="პრე-რეგისტრაცია"
+              className="smaller:w-[288px] h-12 rounded-[8px] font-innerDisplaySemiBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
+             w-[448px] md:w-[530px] xl:w-[150px] "
+            />
+          </div>
+        </div>
+        <div className="smaller:hidden block">
+          <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
-      <div className="hidden xl:block">
-        <MessageBox checkStatus={checkStatus} email={email} />
-      </div>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
       <div className="flex gap-4">
         <SocialLink

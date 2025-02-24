@@ -19,16 +19,18 @@ export default function MessageBox({ checkStatus, email }: Status) {
 
   if (checkStatus) {
     return (
-      <div className="text-white w-[386px] border border-[#D5FE00] border-opacity-20 rounded-xl pl-4 py-4 pr-[18px]">
-        <div className="flex justify-between place-items-start">
+      <div className="text-white w-[448px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12">
+        <div className="flex justify-between place-items-start gap-3">
           <Image
             src="/Circle_Check.png"
             alt="circus check"
             width={24}
             height={24}
           />
-          <span className="text-sm text-[#A0A2A6] w-[284px]">
-            {`შენი ელ.ფოსტა ${email} დამატებულია ჩვენს მოლოდინის სიაში!`}
+          <span className="text-xs leading-[21px] text-[#A0A2A6] w-[384px] h-[42px]">
+            {`შენი ელ.ფოსტა `}
+            <span className="text-white text-xs leading-[21px]">{email}</span>
+            {` დამატებულია ჩვენს მოლოდინის სიაში!`}
           </span>
           <Image
             src="/Close_SM.png"
