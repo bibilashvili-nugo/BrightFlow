@@ -56,10 +56,10 @@ export default function Home() {
   return (
     <div
       className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] 
-    xl:py-[98px] 2xl:pt-[233px]
+    xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
-      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[86px] 2xl:pb-[92px]">
+      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -77,8 +77,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[98px]">
         <p
           className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
-          xl:text-[20px] 
-          2xl:text-[44px] 2xl:leading-[53px]"
+          xl:text-[20px] "
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
@@ -137,12 +136,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="smaller:hidden block h-[74px]">
+        <div className="smaller:hidden block h-[74px] 2xl:mt-2">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
-      <div className="flex gap-4 xl:gap-[40px]">
+      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px]">
         <SocialLink
           href="https://www.facebook.com/BrightFloow"
           src="/facebook.svg"
