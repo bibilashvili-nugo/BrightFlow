@@ -18,9 +18,37 @@ body {
   font-style: normal;
 }
 
-.font-brainMelt {
-  font-family: "brainMelt", sans-serif !important;
+@font-face {
+  font-family: "InerDisplay-light";
+  src: url("/fonts/InerDisplay-light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "InerDisplay-regular";
+  src: url("/fonts/InterDisplay-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterDisplay-medium";
+  src: url("/fonts/InterDisplay-medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterDisplay-bold";
+  src: url("/fonts/InterDisplay-bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .font-brainMelt {
+  font-family: "brainMelt", sans-serif !important;
+} */
 
 @media (min-width: 1920px) {
   body {

@@ -45,7 +45,10 @@ export default function Home() {
     }
   };
 
-  console.log(formData.email);
+  // const nameCheck = /^[ა-ჰA-Za-z\s'-]+$/.test(formData.name);
+  // const emailCheck = formData.email.length > 0;
+
+  // input checker
 
   return (
     <div
@@ -67,10 +70,11 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center smaller:gap-3 gap-6 smaller:pb-10 pb-[92px] md:gap-8 md:pb-[72px] xl:pb-[92px]">
         <div className="flex flex-col items-center justify-center">
           <p
-            className="text-[#A0A2A6] font-normal smaller:text-xl text-2xl md:text-[28px] xl:text-[40px] xl:leading-[48px]
+            className="text-[#A0A2A6] font-innerDisplayLight smaller:text-xl smaller:leading-6 text-2xl leading-[29px]
+            md:text-[28px] md:leading-[34px] xl:text-[40px] xl:leading-[48px]
           2xl:text-[44px] 2xl:leading-[53px]"
           >
-            Join the waitlist for
+            წინასწარი რეგისტრაცია დაიწყო!
           </p>
           <h1
             className="bg-gradient-to-r from-[#C0CEFF] to-[#FF6D35] bg-clip-text text-transparent smaller:text-xl font-bold text-2xl
@@ -100,26 +104,34 @@ export default function Home() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Full Name"
-            className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
-            placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
-            w-[332px] md:w-[530px] xl:w-[269px] hover:border-[2px] focus:border-[#002FEF] focus:border-[2px] transition-colors duration-300"
+            placeholder="სახელი და გვარი"
+            className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+            placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
+            w-[332px] md:w-[530px] xl:w-[269px] 
+            hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
+            focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
+            focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
+            `}
           />
           <input
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="name@email.com"
-            className="rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
-            placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] p-y-[15px] pl-[12px] focus:ring-0 focus:outline-none
-            w-[332px] md:w-[530px] xl:w-[269px]"
+            placeholder="თქვენი ელ.ფოსტა"
+            className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+              placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
+              w-[332px] md:w-[530px] xl:w-[269px] 
+              hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
+              focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
+              focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
+              `}
           />
           <button
             type="submit"
             className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block hover:bg-[#042BCE]
             focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
           >
-            Join the waitlist
+            პრე-რეგისტრაცია
           </button>
         </div>
         <div className="hidden xl:block">
@@ -130,7 +142,7 @@ export default function Home() {
           className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
         w-[332px] md:w-[530px] xl:w-[150px] xl:hidden focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
         >
-          Join the waitlist
+          პრე-რეგისტრაცია
         </button>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
