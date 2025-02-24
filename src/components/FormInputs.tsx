@@ -8,7 +8,7 @@ type FormInputsProps = {
 
 const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
   return (
-    <div className="flex flex-col xl:flex-row xl:gap-4">
+    <div className="flex flex-col xl:flex-row gap-4">
       <input
         name="name"
         value={name}
