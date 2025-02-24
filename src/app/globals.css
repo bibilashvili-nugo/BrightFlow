@@ -11,6 +11,12 @@ body {
   background-attachment: fixed;
 }
 
+@layer base {
+  html {
+    font-feature-settings: "case" on;
+  }
+}
+
 @font-face {
   font-family: "brainMelt";
   src: url("/fonts/brainMelt.otf") format("opentype");
@@ -20,9 +26,10 @@ body {
 
 @font-face {
   font-family: "NotoSansGeorgian_Condensed-Light";
-  src: url("/NotoSansGeorgian_Condensed-Light.ttf") format("truetype");
+  src: url("/fonts/NotoSansGeorgian_Condensed-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-feature-settings: "case" on;
 }
 
 @font-face {
@@ -34,9 +41,10 @@ body {
 
 @font-face {
   font-family: "NotoSansGeorgian_Condensed-Bold";
-  src: url("/NotoSansGeorgian_Condensed-Bold.ttf") format("opentype");
+  src: url("/fonts/NotoSansGeorgian_Condensed-Bold.ttf") format("opentype");
   font-weight: 700;
   font-style: normal;
+  font-feature-settings: "case" on;
 }
 
 @font-face {
