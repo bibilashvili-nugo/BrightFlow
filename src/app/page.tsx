@@ -3,6 +3,7 @@
 import Button from "@/components/Button";
 import FormInputs from "@/components/FormInputs";
 import MessageBox from "@/components/messageBox";
+import SocialLink from "@/components/SocialLinks";
 import Image from "next/image";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -122,95 +123,30 @@ export default function Home() {
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
       <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
-        <a href="https://www.facebook.com/BrightFloow" target="_blank">
-          <div
-            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
-        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-          >
-            <Image
-              src="/facebook.svg"
-              alt="facebook"
-              width={24}
-              height={24}
-              className="xl:w-8 xl:h-8"
-            />
-            <div className="xl:flex xl:flex-col xl:justify-between">
-              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-                Facebook
-              </p>
-              <p className="text-white text-sm font-semibold 2xl:text-base">
-                @BrightFlow
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/company/brightfloow" target="_blank">
-          <div
-            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
-        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-          >
-            <Image
-              src="/linkedin.svg"
-              alt="linkedin"
-              width={24}
-              height={24}
-              className="xl:w-8 xl:h-8"
-            />
-            <div className="xl:flex xl:flex-col xl:justify-between">
-              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-                Linkedin
-              </p>
-              <p className="text-white text-sm font-semibold 2xl:text-base">
-                @BrightFlow
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <div
-            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
-        w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-          >
-            <Image
-              src="/instagram.svg"
-              alt="instagram"
-              width={24}
-              height={24}
-              className="xl:w-8 xl:h-8"
-            />
-
-            <div className="xl:flex xl:flex-col xl:justify-between">
-              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-                Instagram
-              </p>
-              <p className="text-white text-sm font-semibold 2xl:text-base">
-                @BrightFlow
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="https://discord.gg/9uNkMpqdwS" target="_blank">
-          <div
-            className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg
-           w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
-          >
-            <Image
-              src="/discord.svg"
-              alt="discord"
-              width={24}
-              height={24}
-              className="xl:w-8 xl:h-8"
-            />
-            <div className="xl:flex xl:flex-col xl:justify-between">
-              <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
-                Discord
-              </p>
-              <p className="text-white text-sm font-semibold 2xl:text-base">
-                @BrightFlow
-              </p>
-            </div>
-          </div>
-        </a>
+        <SocialLink
+          href="https://www.facebook.com/BrightFloow"
+          src="/facebook.svg"
+          alt="facebook"
+          platform="Facebook"
+        />
+        <SocialLink
+          href="https://www.linkedin.com/company/brightfloow"
+          src="/linkedin.svg"
+          alt="linkedin"
+          platform="Linkedin"
+        />
+        <SocialLink
+          href="https://www.instagram.com/"
+          src="/instagram.svg"
+          alt="instagram"
+          platform="Instagram"
+        />
+        <SocialLink
+          href="https://discord.gg/9uNkMpqdwS"
+          src="/discord.svg"
+          alt="discord"
+          platform="Discord"
+        />
       </div>
     </div>
   );
