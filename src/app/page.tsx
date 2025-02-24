@@ -57,7 +57,7 @@ export default function Home() {
     <div
       className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] 
     xl:py-[98px] 2xl:pt-[233px]
-    smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px] h-screen"
+    smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
       <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[86px] 2xl:pb-[92px]">
         <Image
