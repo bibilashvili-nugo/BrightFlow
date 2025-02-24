@@ -19,7 +19,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
 
   if (checkStatus) {
     return (
-      <div className="text-white w-[448px] md:w-[530px] xl:w-[386px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12">
+      <div className="w-[448px] md:w-[530px] xl:w-[386px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12">
         <div className="flex justify-between place-items-start gap-3">
           <Image
             src="/Circle_Check.png"
@@ -45,7 +45,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
     );
   } else {
     return (
-      <div className="text-white w-[386px] border border-[#FD411B] border-opacity-20 rounded-xl pl-4 py-4 pr-[18px]">
+      <div className="w-[448px] md:w-[530px] xl:w-[386px] border border-[#FD411B] border-opacity-20 rounded-xl pl-4 py-4 pr-[18px]">
         <div className="flex justify-between place-items-start">
           <Image src="/allerts.png" alt="circus check" width={24} height={24} />
           <span className="text-sm text-[#A0A2A6] w-[284px]">
