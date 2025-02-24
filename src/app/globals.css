@@ -46,9 +46,16 @@ body {
   font-style: normal;
 }
 
-/* .font-brainMelt {
-  font-family: "brainMelt", sans-serif !important;
-} */
+@font-face {
+  font-family: "InterDisplay-SemiBold";
+  src: url("/fonts/InterDisplay-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.line-height-auto {
+  line-height: auto;
+}
 
 @media (min-width: 1920px) {
   body {

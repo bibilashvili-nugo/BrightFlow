@@ -22,6 +22,7 @@ export default {
         innerDisplayLight: ["InerDisplay-light"],
         innerDisplayMedium: ["InterDisplay-medium"],
         innerDisplayBold: ["InterDisplay-bold"],
+        innerDisplaySemiBold: ["InterDisplay-SemiBold"],
       },
     },
   },

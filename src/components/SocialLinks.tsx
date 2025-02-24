@@ -10,15 +10,12 @@ type SocialLinkProps = {
 const SocialLink = ({ href, src, alt, platform }: SocialLinkProps) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <div className="flex gap-3 items-center justify-center smaller:w-[288px] h-[40px] border-white/10 border-[1px] rounded-lg w-[332px] md:w-[529px] xl:border-none xl:w-auto xl:gap-3">
-        <Image
-          src={src}
-          alt={alt}
-          width={24}
-          height={24}
-          className="xl:w-8 xl:h-8"
-        />
-        <div className="xl:flex xl:flex-col xl:justify-between">
+      <div
+        className="flex items-center justify-center smaller:py-[13px] smaller:px-[18px] border-white/10 border-[1px] 
+      rounded-xl  md:w-[529px] xl:border-none xl:w-auto xl:gap-3"
+      >
+        <Image src={src} alt={alt} width={24} height={24} className="" />
+        <div className="xl:flex xl:flex-col xl:justify-between smaller:hidden">
           <p className="text-[#A0A2A6] hidden xl:block xl:text-xs">
             {platform}
           </p>
