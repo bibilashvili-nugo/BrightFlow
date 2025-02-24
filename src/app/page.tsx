@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/Button";
 import FormInputs from "@/components/FormInputs";
 import MessageBox from "@/components/messageBox";
 import Image from "next/image";
@@ -106,24 +107,18 @@ export default function Home() {
             email={formData.email}
             onChange={handleChange}
           />
-          <button
-            type="submit"
-            className="bg-[#002FEF] h-12 rounded-[8px] font-semibold text-sm text-white xl:w-[150px] hidden xl:block hover:bg-[#042BCE]
-            focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
-          >
-            პრე-რეგისტრაცია
-          </button>
+          <Button
+            text="პრე-რეგისტრაცია"
+            className="xl:w-[150px] hidden xl:block"
+          />
         </div>
         <div className="hidden xl:block">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
-        <button
-          type="submit"
-          className="bg-[#002FEF] smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white
-        w-[332px] md:w-[530px] xl:w-[150px] xl:hidden focus:bg-[#002FEF] focus:ring-[3px] focus:ring-white focus:ring-opacity-10 active:bg-[0426B5]"
-        >
-          პრე-რეგისტრაცია
-        </button>
+        <Button
+          text="პრე-რეგისტრაცია"
+          className="smaller:w-[288px] h-12 rounded-[8px] font-semibold text-sm text-white w-[332px] md:w-[530px] xl:w-[150px] xl:hidden"
+        />
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
       <div className="flex flex-col gap-4 xl:flex-row xl:gap-10 2xl:gap-[62px]">
