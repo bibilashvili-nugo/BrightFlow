@@ -83,12 +83,6 @@ export default function Home() {
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
         <div className="smaller:flex flex-col justify-center items-center hidden">
-          {/* <h1
-            className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto text-2xl
-          md:text-[28px] xl:text-[40px] xl:leading-[48px] 2xl:text-[44px] 2xl:leading-[53px]"
-          >
-            გახდი ციფრული პროდუქტების საზოგადოების წევრი
-          </h1> */}
           <span className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto">
             გახდი ციფრული
           </span>
@@ -126,10 +120,7 @@ export default function Home() {
         <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4">
           დასაწყისი - მაისი 2025
         </p>
-        <div className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row">
-          {/* <p className="text-[#A0A2A6] font-normal text-xs xl:hidden">
-            დასაწყისი - მაისი 2025
-          </p> */}
+        <div className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row smaller:h-auto h-[217px]">
           <FormInputs
             name={formData.name}
             email={formData.email}
@@ -143,7 +134,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="smaller:hidden block">
+        <div className="smaller:hidden block h-[74px]">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
