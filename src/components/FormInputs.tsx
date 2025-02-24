@@ -8,7 +8,7 @@ type FormInputsProps = {
 
 const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
   return (
-    <>
+    <div className="flex flex-col xl:flex-row xl:gap-4">
       <input
         name="name"
         value={name}
@@ -20,7 +20,7 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
         focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
         focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
-        smaller:mb-0 mb-4
+        smaller:mb-0 mb-4 xl:mb-0
         `}
       />
       <input
@@ -34,10 +34,10 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
         focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
         focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
-        smaller:mb-0 mb-6
+        smaller:mb-0 mb-6 xl:mb-0
         `}
       />
-    </>
+    </div>
   );
 };
 

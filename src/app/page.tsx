@@ -56,28 +56,28 @@ export default function Home() {
   return (
     <div
       className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] 
-    xl:pt-[181px] xl:pb-[179px] 2xl:pt-[233px]
+    xl:py-[98px] 2xl:pt-[233px]
     smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
-      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[68px] 2xl:pb-[92px]">
+      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[86px] 2xl:pb-[92px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
           width={100}
           height={100}
-          className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
+          className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[41px] xl:h-[49px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
           className="text-white font-innerDisplayBold smaller:text-xl line-height-auto text-2xl 
-        xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]"
+        xl:text-[32px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[92px]">
+      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[98px]">
         <p
           className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
-          xl:text-[40px] xl:leading-[48px]
+          xl:text-[20px] 
           2xl:text-[44px] 2xl:leading-[53px]"
         >
           წინასწარი რეგისტრაცია დაიწყო!
@@ -94,10 +94,10 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px]">
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px]">
+          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
             საზოგადოების წევრი
           </span>
         </div>
@@ -109,28 +109,31 @@ export default function Home() {
             გამოცდილებისითვის
           </p>
         </div>
-        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
+        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto xl:text-base">
           და მოემზადე ახალი გამოცდილებისითვის
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] md:pb-[60px] xl:flex-col xl:gap-[16px] xl:pb-9"
+        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] xl:min-h-[179px] md:pb-[60px] xl:pb-[89px] xl:flex-col xl:gap-[16px]"
       >
-        <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4">
+        <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4 xl:mb-0">
           დასაწყისი - მაისი 2025
         </p>
-        <div className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row smaller:h-auto h-[217px]">
+        <div
+          className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
+         smaller:h-auto h-[217px] xl:h-12"
+        >
           <FormInputs
             name={formData.name}
             email={formData.email}
             onChange={handleChange}
           />
-          <div className="smaller:pb-0 pb-4">
+          <div className="smaller:pb-0 pb-4 xl:pb-0">
             <Button
               text="პრე-რეგისტრაცია"
               className="smaller:w-[288px] h-12 rounded-[8px] font-innerDisplaySemiBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
-             w-[448px] md:w-[530px] xl:w-[150px] "
+             w-[448px] md:w-[530px] xl:w-[194px] "
             />
           </div>
         </div>
@@ -139,7 +142,7 @@ export default function Home() {
         </div>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 xl:gap-[40px]">
         <SocialLink
           href="https://www.facebook.com/BrightFloow"
           src="/facebook.svg"

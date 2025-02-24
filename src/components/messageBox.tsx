@@ -27,7 +27,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
             width={24}
             height={24}
           />
-          <span className="text-xs leading-[21px] text-[#A0A2A6] w-[384px] h-[42px] md:w-[430px]">
+          <span className="text-xs leading-[21px] text-[#A0A2A6] w-[384px] h-[42px] md:w-[430px] xl:w-[386px]">
             {`შენი ელ.ფოსტა `}
             <span className="text-white text-xs leading-[21px]">{email}</span>
             {` დამატებულია ჩვენს მოლოდინის სიაში!`}
