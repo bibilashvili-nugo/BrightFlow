@@ -68,7 +68,7 @@ export default function Home() {
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[41px] xl:h-[49px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
-          className="text-white font-innerDisplayBold smaller:text-xl line-height-auto text-2xl 
+          className="text-white font-notoSanBold smaller:text-xl line-height-auto text-2xl 
         xl:text-[32px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
@@ -76,39 +76,39 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[98px]">
         <p
-          className="text-[#A0A2A6] font-innerDisplayLight text-sm line-height-auto
+          className="text-[#A0A2A6] font-notoSanLight text-sm line-height-auto
           xl:text-[20px] "
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
         <div className="smaller:flex flex-col justify-center items-center hidden">
-          <span className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto">
+          <span className="text-[#FFFFFF] font-notoSanBold smaller:text-xl smaller:line-height-auto">
             გახდი ციფრული
           </span>
-          <span className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto">
+          <span className="text-[#FFFFFF] font-notoSanBold smaller:text-xl smaller:line-height-auto">
             პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-innerDisplayBold smaller:text-xl smaller:line-height-auto">
+          <span className="text-[#FFFFFF] font-notoSanBold smaller:text-xl smaller:line-height-auto">
             საზოგადოების წევრი
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-innerDisplayBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
             საზოგადოების წევრი
           </span>
         </div>
         <div className="smaller:flex flex-col hidden">
-          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
+          <p className="text-[#A0A2A6] text-sm font-notoSanLight line-height-auto">
             და მოემზადე ახალი
           </p>
-          <p className="text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto">
+          <p className="text-[#A0A2A6] text-sm font-notoSanLight line-height-auto">
             გამოცდილებისითვის
           </p>
         </div>
-        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-innerDisplayLight line-height-auto xl:text-base">
+        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-notoSanLight line-height-auto xl:text-base">
           და მოემზადე ახალი გამოცდილებისითვის
         </p>
       </div>
@@ -131,7 +131,7 @@ export default function Home() {
           <div className="smaller:pb-0 pb-4 xl:pb-0">
             <Button
               text="პრე-რეგისტრაცია"
-              className="smaller:w-[288px] h-12 rounded-[8px] font-innerDisplaySemiBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
+              className="smaller:w-[288px] h-12 rounded-[8px] font-notoSanBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
              w-[448px] md:w-[530px] xl:w-[194px] "
             />
           </div>

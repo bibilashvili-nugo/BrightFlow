@@ -19,29 +19,29 @@ body {
 }
 
 @font-face {
-  font-family: "InterDisplay-Light";
-  src: url("/fonts/InterDisplay-Light.ttf") format("truetype");
+  font-family: "NotoSansGeorgian_Condensed-Light";
+  src: url("/NotoSansGeorgian_Condensed-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "InterDisplay-medium";
-  src: url("/fonts/InterDisplay-medium.ttf") format("opentype");
+  font-family: "NotoSansGeorgian_Condensed-Medium";
+  src: url("/NotoSansGeorgian_Condensed-Medium.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "InterDisplay-bold";
-  src: url("/fonts/InterDisplay-bold.ttf") format("opentype");
+  font-family: "NotoSansGeorgian_Condensed-Bold";
+  src: url("/NotoSansGeorgian_Condensed-Bold.ttf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "InterDisplay-SemiBold";
-  src: url("/fonts/InterDisplay-SemiBold.ttf") format("opentype");
+  font-family: "NotoSansGeorgian_Condensed-SemiBold";
+  src: url("/NotoSansGeorgian_Condensed-SemiBold.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
