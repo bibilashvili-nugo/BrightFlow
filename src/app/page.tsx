@@ -138,6 +138,7 @@ export default function Home() {
                 name={formData.name}
                 email={formData.email}
                 onChange={handleChange}
+                disabled={loading}
               />
             </div>
             <div className="smaller:pb-0 pb-3 xl:pb-0 w-full">
