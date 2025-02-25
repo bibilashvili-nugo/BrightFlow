@@ -25,7 +25,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
 
   if (checkStatus) {
     return (
-      <div className="w-[448px] md:w-[530px] xl:w-[386px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12">
+      <div className="w-full md:w-[530px] xl:w-[386px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12">
         <div className="flex justify-between place-items-start gap-3">
           <Image
             src="/Circle_Check.png"
