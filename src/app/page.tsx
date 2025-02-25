@@ -117,23 +117,25 @@ export default function Home() {
         <p className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
           დასაწყისი - მაისი 2025
         </p>
-        <div
-          className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
+        <div className="flex justify-center items-center w-full md:w-auto">
+          <div
+            className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
          smaller:h-[176px] h-[196px] xl:h-12 w-full"
-        >
-          <div className="w-full">
-            <FormInputs
-              name={formData.name}
-              email={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="smaller:pb-0 pb-3 xl:pb-0 w-full">
-            <Button
-              text="პრე-რეგისტრაცია"
-              className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF]
+          >
+            <div className="w-full">
+              <FormInputs
+                name={formData.name}
+                email={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="smaller:pb-0 pb-3 xl:pb-0 w-full">
+              <Button
+                text="პრე-რეგისტრაცია"
+                className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF] md:w-[530px]
                xl:w-[194px] uppercase"
-            />
+              />
+            </div>
           </div>
         </div>
         <div className="smaller:hidden block h-[74px] w-full 2xl:mt-2">
