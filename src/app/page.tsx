@@ -56,11 +56,11 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] xl:h-screen
+      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] h-screen
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
-    smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
+    px-4"
     >
-      <div className="flex smaller:gap-4 items-center smaller:pb-14 justify-center gap-5 pb-[76px] md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
+      <div className="flex smaller:gap-4 items-center smaller:py-8 justify-center gap-5  md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -69,27 +69,27 @@ export default function Home() {
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[41px] xl:h-[49px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
-          className="text-white font-interDisplayBold smaller:text-xl line-height-auto text-2xl 
+          className="text-white font-bold smaller:text-xl line-height-auto text-2xl 
         xl:text-[32px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 smaller:pb-11 pb-[76px] md:pb-[84px] xl:pb-[98px]">
+      <div className="flex flex-col items-center justify-center smaller:gap-2 smaller:pb-8  md:pb-[84px] xl:pb-[98px]">
         <p
-          className="text-[#A0A2A6] font-notoSanLight text-sm line-height-auto
+          className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs line-height-auto
           xl:text-[20px] uppercase"
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
         <div className="smaller:flex flex-col justify-center items-center hidden">
-          <span className="text-[#FFFFFF] font-interDisplayBold smaller:text-xl smaller:line-height-auto uppercase">
+          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             გახდი ციფრული
           </span>
-          <span className="text-[#FFFFFF] font-interDisplayBold smaller:text-xl smaller:line-height-auto">
+          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-interDisplayBold smaller:text-xl smaller:line-height-auto">
+          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             საზოგადოების წევრი
           </span>
         </div>
@@ -101,38 +101,37 @@ export default function Home() {
             საზოგადოების წევრი
           </span>
         </div>
-        <div className="smaller:flex flex-col hidden">
-          <p className="text-[#A0A2A6] text-sm font-notoSanLight line-height-auto">
-            და მოემზადე ახალი
-          </p>
-          <p className="text-[#A0A2A6] text-sm font-notoSanLight line-height-auto">
-            გამოცდილებისითვის
-          </p>
-        </div>
-        <p className="smaller:hidden block text-[#A0A2A6] text-sm font-notoSanLight line-height-auto xl:text-base ">
+        <p
+          className="text-[#A0A2A6] font-notoSanLight smaller:text-xs line-height-auto
+          xl:text-[20px] uppercase"
+        >
           და მოემზადე ახალი გამოცდილებისითვის
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center smaller:gap-[15px] smaller:pb-[50px] pb-[76px] min-h-[307px] xl:min-h-[179px] md:pb-[60px] xl:pb-[89px] xl:flex-col xl:gap-[16px]"
+        className="flex flex-col justify-center items-center smaller:gap-3 smaller:pb-9 
+        pb-[76px] min-h-[307px] xl:min-h-[179px] md:pb-[60px] xl:pb-[89px] xl:flex-col xl:gap-[16px]
+        w-full"
       >
-        <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-innerDisplayRegular smaller:mb-0 mb-4 xl:mb-0">
+        <p className="text-[#A0A2A6] smaller:text-xs text-sm line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
           დასაწყისი - მაისი 2025
         </p>
         <div
           className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
-         smaller:h-auto h-[217px] xl:h-12"
+         smaller:h-[176px] h-[217px] xl:h-12 smaller:w-full"
         >
-          <FormInputs
-            name={formData.name}
-            email={formData.email}
-            onChange={handleChange}
-          />
-          <div className="smaller:pb-0 pb-4 xl:pb-0">
+          <div className="w-full">
+            <FormInputs
+              name={formData.name}
+              email={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="smaller:pb-0 pb-4 xl:pb-0 smaller:w-full">
             <Button
               text="პრე-რეგისტრაცია"
-              className="smaller:w-[288px] h-12 rounded-[8px] font-notoSanBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
+              className="smaller:w-full h-12 rounded-[8px] font-notoSanBold smaller:text-sm smaller:leading-[18px] text-[#FFFFFF]
              w-[448px] md:w-[530px] xl:w-[194px] uppercase"
             />
           </div>

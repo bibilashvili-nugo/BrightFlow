@@ -14,7 +14,7 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         value={name}
         onChange={onChange}
         placeholder="სახელი და გვარი"
-        className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+        className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-full h-[48px]
         placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
         w-[448px] md:w-[530px] xl:w-[269px] 
         hover:outline hover:outline-[1px] hover:outline-[#555555 ] 
@@ -28,7 +28,7 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         value={email}
         onChange={onChange}
         placeholder="თქვენი ელ.ფოსტა"
-        className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
+        className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-full h-[48px]
         placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
         w-[448px] md:w-[530px] xl:w-[269px] 
         hover:outline hover:outline-[1px] hover:outline-[#555555 ] 

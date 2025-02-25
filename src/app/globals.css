@@ -25,31 +25,39 @@ body {
 }
 
 @font-face {
-  font-family: "NotoSansGeorgian_Condensed-Light";
-  src: url("/fonts/NotoSansGeorgian_Condensed-Light.ttf") format("truetype");
+  font-family: "NotoSansGeorgian-Regular";
+  src: url("/fonts/NotoSansGeorgian-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-  font-feature-settings: "case" on;
+  /* font-feature-settings: "case" on; */
 }
 
 @font-face {
-  font-family: "NotoSansGeorgian_Condensed-Medium";
-  src: url("/fonts/NotoSansGeorgian_Condensed-Medium.ttf") format("opentype");
+  font-family: "NotoSansGeorgian-Light";
+  src: url("/fonts/NotoSansGeorgian-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  /* font-feature-settings: "case" on; */
+}
+
+@font-face {
+  font-family: "NotoSansGeorgian-Medium";
+  src: url("/fonts/NotoSansGeorgian-Medium.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "NotoSansGeorgian_Condensed-Bold";
-  src: url("/fonts/NotoSansGeorgian_Condensed-Bold.ttf") format("opentype");
+  font-family: "NotoSansGeorgian-Bold";
+  src: url("/fonts/NotoSansGeorgian-Bold.ttf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-feature-settings: "case" on;
 }
 
 @font-face {
-  font-family: "NotoSansGeorgian_Condensed-SemiBold";
-  src: url("/fonts/NotoSansGeorgian_Condensed-SemiBold.ttf") format("opentype");
+  font-family: "NotoSansGeorgian-SemiBold";
+  src: url("/fonts/NotoSansGeorgian-SemiBold.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
