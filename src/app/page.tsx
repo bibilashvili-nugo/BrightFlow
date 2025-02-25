@@ -56,11 +56,11 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] h-screen
+      className="flex flex-col items-center justify-center w-full  h-screen
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
-    px-4"
+    px-4 md:px-[107px]"
     >
-      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
+      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -69,13 +69,13 @@ export default function Home() {
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[41px] xl:h-[49px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
-          className="text-white font-bold smaller:text-xl text-[24px] line-height-auto text-2xl 
+          className="text-white font-bold smaller:text-xl line-height-auto text-2xl 
         xl:text-[32px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] md:pb-[84px] xl:pb-[98px]">
+      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[98px]">
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs text-sm line-height-auto
           xl:text-[20px] uppercase"
@@ -94,10 +94,10 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[44px] xl:leading-[54px]">
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[32px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[44px] xl:leading-[54px]">
             საზოგადოების წევრი
           </span>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
       <form
         onSubmit={handleSubmit}
         className="flex flex-col justify-center items-center smaller:gap-3 smaller:pb-9 
-        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[60px] xl:pb-[89px] xl:flex-col xl:gap-[16px]
+        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[89px] xl:flex-col xl:gap-[16px]
         w-full"
       >
         <p className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
@@ -132,11 +132,11 @@ export default function Home() {
             <Button
               text="პრე-რეგისტრაცია"
               className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF]
-              md:w-[530px] xl:w-[194px] uppercase"
+               xl:w-[194px] uppercase"
             />
           </div>
         </div>
-        <div className="smaller:hidden block h-[74px] 2xl:mt-2">
+        <div className="smaller:hidden block h-[74px] w-full 2xl:mt-2">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
