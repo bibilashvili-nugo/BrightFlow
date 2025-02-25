@@ -143,31 +143,39 @@ export default function Home() {
         </div>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
-      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between">
-        <SocialLink
-          href="https://www.facebook.com/BrightFloow"
-          src="/facebook.svg"
-          alt="facebook"
-          platform="Facebook"
-        />
-        <SocialLink
-          href="https://www.linkedin.com/company/brightfloow"
-          src="/linkedin.svg"
-          alt="linkedin"
-          platform="Linkedin"
-        />
-        <SocialLink
-          href="https://www.instagram.com/"
-          src="/instagram.svg"
-          alt="instagram"
-          platform="Instagram"
-        />
-        <SocialLink
-          href="https://discord.gg/9uNkMpqdwS"
-          src="/discord.svg"
-          alt="discord"
-          platform="Discord"
-        />
+      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between md:w-[530px]">
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+          <SocialLink
+            href="https://www.facebook.com/BrightFloow"
+            src="/facebook.svg"
+            alt="facebook"
+            platform="Facebook"
+          />
+        </div>
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+          <SocialLink
+            href="https://www.linkedin.com/company/brightfloow"
+            src="/linkedin.svg"
+            alt="linkedin"
+            platform="Linkedin"
+          />
+        </div>
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+          <SocialLink
+            href="https://www.instagram.com/"
+            src="/instagram.svg"
+            alt="instagram"
+            platform="Instagram"
+          />
+        </div>
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+          <SocialLink
+            href="https://discord.gg/9uNkMpqdwS"
+            src="/discord.svg"
+            alt="discord"
+            platform="Discord"
+          />
+        </div>
       </div>
     </div>
   );

@@ -11,8 +11,9 @@ const SocialLink = ({ href, src, alt, platform }: SocialLinkProps) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div
-        className="flex items-center justify-center smaller:py-[12px] smaller:px-[20px] px-[38px] py-[13px] md:px-12 border-white/10 border-[1px] 
-      rounded-xl xl:border-none xl:w-auto xl:gap-3 xl:px-0 xl:py-0"
+        // smaller:py-[12px] smaller:px-[20px] px-[38px] py-[13px] border-white/10 border-[1px] rounded-xl
+        className="flex items-center justify-center md:px-12 
+       xl:border-none xl:w-auto xl:gap-3 xl:px-0 xl:py-0"
       >
         <Image
           src={src}
