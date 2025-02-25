@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] h-screen
+      className="flex flex-col items-center justify-center w-full md:pt-[76px] md:pb-[98px] xl:h-screen
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     smaller:pt-[32px] smaller:pb-6 px-4 pt-[76px] pb-[98px]"
     >
