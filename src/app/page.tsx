@@ -60,25 +60,25 @@ export default function Home() {
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     px-4 md:px-[107px]"
     >
-      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 xl:pb-[86px] 2xl:pb-[98px]">
+      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 2xl:pb-[98px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
           width={100}
           height={100}
-          className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[41px] xl:h-[49px] 2xl:w-[41px] 2xl:h-[49px]"
+          className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
           className="text-white font-bold smaller:text-xl line-height-auto text-2xl 
-        xl:text-[32px] 2xl:text-[32px] 2xl:leading-[39px]"
+        xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[98px]">
+      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[100px]">
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs text-sm line-height-auto
-          xl:text-[20px] uppercase"
+          xl:text-base uppercase"
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
@@ -94,16 +94,16 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]">
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[44px] xl:leading-[54px]">
+          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]">
             საზოგადოების წევრი
           </span>
         </div>
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs line-height-auto text-sm
-          xl:text-[20px] uppercase"
+          uppercase"
         >
           და მოემზადე ახალი გამოცდილებისითვის
         </p>
@@ -111,7 +111,7 @@ export default function Home() {
       <form
         onSubmit={handleSubmit}
         className="flex flex-col justify-center items-center smaller:gap-3 smaller:pb-9 
-        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[89px] xl:flex-col xl:gap-[16px]
+        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[34px] xl:flex-col xl:gap-4
         w-full"
       >
         <p className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
@@ -133,18 +133,24 @@ export default function Home() {
               <Button
                 text="პრე-რეგისტრაცია"
                 className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF] md:w-[530px]
-               xl:w-[194px] uppercase"
+               xl:w-[192px] uppercase"
               />
             </div>
           </div>
         </div>
-        <div className="smaller:hidden block h-[74px] w-full 2xl:mt-2">
+        <div className="smaller:hidden flex justify-center h-[74px] w-full 2xl:mt-2 ">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
-      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between md:w-[530px]">
-        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+      <div
+        className="flex gap-4 xl:gap-[62px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between md:w-[530px] 
+      xl:w-[758px]"
+      >
+        <div
+          className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl
+        xl:border-none xl:py-0"
+        >
           <SocialLink
             href="https://www.facebook.com/BrightFloow"
             src="/facebook.svg"
@@ -152,7 +158,7 @@ export default function Home() {
             platform="Facebook"
           />
         </div>
-        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl xl:border-none xl:py-0">
           <SocialLink
             href="https://www.linkedin.com/company/brightfloow"
             src="/linkedin.svg"
@@ -160,7 +166,7 @@ export default function Home() {
             platform="Linkedin"
           />
         </div>
-        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl xl:border-none xl:py-0">
           <SocialLink
             href="https://www.instagram.com/"
             src="/instagram.svg"
@@ -168,7 +174,7 @@ export default function Home() {
             platform="Instagram"
           />
         </div>
-        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl">
+        <div className="w-full smaller:py-[12px] py-[13px] border-white/10 border-[1px] rounded-xl xl:border-none xl:py-0">
           <SocialLink
             href="https://discord.gg/9uNkMpqdwS"
             src="/discord.svg"

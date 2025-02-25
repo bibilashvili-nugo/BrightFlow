@@ -26,7 +26,7 @@ const SocialLink = ({ href, src, alt, platform }: SocialLinkProps) => {
           <p className="text-[#A0A2A6] hidden xl:block xl:text-xs xl:leading-[18px]">
             {platform}
           </p>
-          <p className="text-white text-sm font-semibold xl:text-xs xl:leading-[18px] 2xl:text-base">
+          <p className="text-white font-semibold xl:text-base xl:leading-[18px] 2xl:text-base">
             @BrightFlow
           </p>
         </div>
