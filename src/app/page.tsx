@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import FormInputs from "@/components/FormInputs";
 import MessageBox from "@/components/messageBox";
 import SocialLink from "@/components/SocialLinks";
+import Spinner from "@/components/Spinner";
 import Image from "next/image";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -12,6 +13,7 @@ export default function Home() {
     name: "",
     email: "",
   });
+  const [loading, setLoading] = useState<boolean>(false);
   // const [status, setStatus] = useState<string>("");
   const [checkStatus, setCheckStatus] = useState<boolean | undefined>(
     undefined
@@ -24,6 +26,7 @@ export default function Home() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
     setCheckStatus(undefined);
     setEmail(formData.email);
     // setStatus("Sending...");
@@ -46,6 +49,8 @@ export default function Home() {
       console.error(error);
       // setStatus("An unexpected error occurred.");
       setCheckStatus(false);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -137,7 +142,7 @@ export default function Home() {
             </div>
             <div className="smaller:pb-0 pb-3 xl:pb-0 w-full">
               <Button
-                text="პრე-რეგისტრაცია"
+                text={loading === true ? <Spinner /> : "პრე-რეგისტრაცია"}
                 className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF] md:w-[530px]
                xl:w-[192px] 2xl:w-[190px] uppercase"
               />
@@ -148,7 +153,6 @@ export default function Home() {
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
-      {/* {status && <p className="text-white mt-4">{status}</p>} */}
       <div
         className="flex gap-4 xl:gap-[62px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between md:w-[530px] 
       xl:w-[758px]"
