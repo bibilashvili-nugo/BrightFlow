@@ -46,9 +46,9 @@ export default function MessageBox({ checkStatus, email }: Status) {
   } else {
     return (
       <div className="w-[448px] md:w-[530px] xl:w-[386px] border border-[#FD411B] border-opacity-20 rounded-xl pl-4 py-4 pr-[18px]">
-        <div className="flex justify-between place-items-start">
+        <div className="flex justify-between place-items-start gap-3">
           <Image src="/allerts.png" alt="circus check" width={24} height={24} />
-          <span className="text-sm text-[#A0A2A6] w-[284px]">
+          <span className="text-sm text-[#A0A2A6] w-[384px]">
             {`შენს მიერ შეყვენილი მონაცემები არასწორია!`}
           </span>
           <Image
