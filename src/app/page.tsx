@@ -60,7 +60,7 @@ export default function Home() {
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     px-4 md:px-[107px]"
     >
-      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 2xl:pb-[98px]">
+      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 2xl:pb-[64px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
@@ -75,7 +75,7 @@ export default function Home() {
           BrightFlow
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[100px]">
+      <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[100px] 2xl:pb-[133px]">
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs text-sm line-height-auto
           xl:text-base uppercase"
@@ -94,10 +94,16 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]">
+          <span
+            className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]
+          2xl:text-[44px] 2xl:leading-[60px]"
+          >
             გახდი ციფრული პროდუქტების
           </span>
-          <span className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]">
+          <span
+            className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]
+          2xl:text-[44px] 2xl:leading-[60px]"
+          >
             საზოგადოების წევრი
           </span>
         </div>
@@ -111,7 +117,7 @@ export default function Home() {
       <form
         onSubmit={handleSubmit}
         className="flex flex-col justify-center items-center smaller:gap-3 smaller:pb-9 
-        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[34px] xl:flex-col xl:gap-4
+        pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[34px] 2xl:pb-[67px] xl:flex-col xl:gap-4
         w-full"
       >
         <p className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
@@ -133,7 +139,7 @@ export default function Home() {
               <Button
                 text="პრე-რეგისტრაცია"
                 className="w-full h-12 rounded-[8px] font-notoSanBold text-sm leading-[18px] text-[#FFFFFF] md:w-[530px]
-               xl:w-[192px] uppercase"
+               xl:w-[192px] 2xl:w-[190px] uppercase"
               />
             </div>
           </div>
