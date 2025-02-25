@@ -24,6 +24,7 @@ export default function Home() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setCheckStatus(undefined);
     setEmail(formData.email);
     // setStatus("Sending...");
     try {

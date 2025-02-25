@@ -1,7 +1,7 @@
 "use clinet";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Status {
   checkStatus: boolean | undefined;
@@ -14,6 +14,12 @@ export default function MessageBox({ checkStatus, email }: Status) {
   const handleClick = () => {
     setIsVisible(false);
   };
+
+  useEffect(() => {
+    if (checkStatus !== undefined && (checkStatus || !checkStatus)) {
+      setIsVisible(true);
+    }
+  }, [checkStatus]);
 
   if (checkStatus === undefined || !isVisible) return null;
 
