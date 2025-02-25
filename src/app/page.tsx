@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </form>
       {/* {status && <p className="text-white mt-4">{status}</p>} */}
-      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px]">
+      <div className="flex gap-4 xl:gap-[40px] 2xl:gap-[62px] w-full items-center md:justify-center justify-between">
         <SocialLink
           href="https://www.facebook.com/BrightFloow"
           src="/facebook.svg"
