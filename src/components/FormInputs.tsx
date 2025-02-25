@@ -17,9 +17,9 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
         placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
         w-[448px] md:w-[530px] xl:w-[269px] 
-        hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
-        focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
-        focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
+        hover:outline hover:outline-[1px] hover:outline-[#555555 ] 
+        focus:ring-0 focus:outline focus:outline-[1px] focus:border-transparent
+        focus:outline-[#4397F7] focus:outline-offset-[0px] transition-colors duration-300
         smaller:mb-0 mb-4 xl:mb-0
         `}
       />
@@ -31,9 +31,9 @@ const FormInputs: React.FC<FormInputsProps> = ({ name, email, onChange }) => {
         className={`rounded-[8px] border border-white border-opacity-10 bg-[#2B2B2B] smaller:w-[288px] h-[48px]
         placeholder:text-[#A0A2A6] placeholder:font-medium placeholder:text-[12px] text-[#A0A2A6] p-y-[15px] pl-[12px] 
         w-[448px] md:w-[530px] xl:w-[269px] 
-        hover:outline hover:outline-[2px] hover:outline-[#A0A2A6] 
-        focus:ring-0 focus:outline focus:outline-[2px] focus:border-transparent
-        focus:outline-[#002FEF] focus:outline-offset-[0px] transition-colors duration-300
+        hover:outline hover:outline-[1px] hover:outline-[#555555 ] 
+        focus:ring-0 focus:outline focus:outline-[1px] focus:border-transparent
+        focus:outline-[#4397F7] focus:outline-offset-[0px] transition-colors duration-300
         smaller:mb-0 mb-6 xl:mb-0
         `}
       />
