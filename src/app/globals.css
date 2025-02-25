@@ -34,7 +34,7 @@ body {
 
 @font-face {
   font-family: "NotoSansGeorgian_Condensed-Medium";
-  src: url("/NotoSansGeorgian_Condensed-Medium.ttf") format("opentype");
+  src: url("/fonts/NotoSansGeorgian_Condensed-Medium.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -49,7 +49,7 @@ body {
 
 @font-face {
   font-family: "NotoSansGeorgian_Condensed-SemiBold";
-  src: url("/NotoSansGeorgian_Condensed-SemiBold.ttf") format("opentype");
+  src: url("/fonts/NotoSansGeorgian_Condensed-SemiBold.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
