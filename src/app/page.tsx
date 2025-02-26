@@ -74,7 +74,7 @@ export default function Home() {
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
         <span
-          className="text-white font-bold smaller:text-xl line-height-auto text-2xl 
+          className="text-white font-interDisplayBold smaller:text-xl line-height-auto text-2xl 
         xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow

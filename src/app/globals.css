@@ -20,6 +20,13 @@ body {
 }
 
 @font-face {
+  font-family: "InterDisplay-Bold";
+  src: url("/fonts/InterDisplay-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "NotoSansGeorgian-Regular";
   src: url("/fonts/NotoSansGeorgian-Regular.ttf") format("truetype");
   font-weight: 300;

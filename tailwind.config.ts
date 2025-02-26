@@ -23,6 +23,7 @@ export default {
         notoSanBold: ["NotoSansGeorgian-Bold"],
         notoSanSemiBold: ["NotoSansGeorgian-SemiBold"],
         notoSanRegular: ["NotoSansGeorgian-Regular"],
+        interDisplayBold: ["InterDisplay-Bold"],
       },
     },
   },
