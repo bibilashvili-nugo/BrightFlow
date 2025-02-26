@@ -26,7 +26,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
   if (checkStatus) {
     return (
       <div
-        className="w-full xl:w-[588px] xl:h-[56px] 2xl:w-[614px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12 md:w-[530px]
+        className="w-full xl:w-[588px] xl:min-h-[56px] 2xl:w-[614px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-12 md:w-[530px]
       "
       >
         <div className="flex justify-between place-items-start gap-3">
@@ -36,7 +36,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
             width={24}
             height={24}
           />
-          <span className="text-xs leading-[21px] text-[#A0A2A6] w-[384px] h-[42px] md:w-[430px] xl:w-[386px] 2xl:w-[288px]">
+          <span className="text-xs leading-[21px] text-[#A0A2A6]  min-h-[22px]">
             {`შენი ელ.ფოსტა `}
             <span className="text-white text-xs leading-[21px]">{email}</span>
             {` დამატებულია ჩვენს მოლოდინის სიაში!`}
