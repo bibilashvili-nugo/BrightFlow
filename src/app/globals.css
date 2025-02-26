@@ -12,6 +12,11 @@ body {
   }
 }
 
+h2,
+input {
+  font-feature-settings: "case" off;
+}
+
 @font-face {
   font-family: "brainMelt";
   src: url("/fonts/brainMelt.otf") format("opentype");
@@ -31,7 +36,6 @@ body {
   src: url("/fonts/NotoSansGeorgian-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-  /* font-feature-settings: "case" on; */
 }
 
 @font-face {
@@ -60,6 +64,13 @@ body {
 @font-face {
   font-family: "NotoSansGeorgian-SemiBold";
   src: url("/fonts/NotoSansGeorgian-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterDisplay-SemiBold";
+  src: url("/fonts/InterDisplay-SemiBold.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }

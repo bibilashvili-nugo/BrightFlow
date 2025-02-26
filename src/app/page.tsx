@@ -83,7 +83,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[100px] 2xl:pb-[133px]">
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs text-sm line-height-auto
-          xl:text-base uppercase"
+          xl:text-base"
         >
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
@@ -125,9 +125,9 @@ export default function Home() {
         pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[34px] 2xl:pb-[67px] xl:flex-col xl:gap-4
         w-full"
       >
-        <p className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
+        <h2 className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
           დასაწყისი - მაისი 2025
-        </p>
+        </h2>
         <div className="flex justify-center items-center w-full md:w-auto">
           <div
             className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
