@@ -65,7 +65,7 @@ export default function Home() {
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     px-4 md:px-[107px]"
     >
-      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-12 pb-16 md:pt-12 md:pb-16 2xl:pb-[64px]">
+      <div className="flex gap-4 items-center smaller:py-8 justify-center pt-8 pb-16 md:pt-12 md:pb-16 2xl:pb-[64px]">
         <Image
           src="/BrightFlowLogo.svg"
           alt="Bright Flow"
