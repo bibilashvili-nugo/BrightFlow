@@ -150,7 +150,7 @@ export async function POST(req) {
           width: 100%;
           max-width: 600px;
           margin: auto;
-          padding-bottom: 44px;
+          padding-bottom: 32px;
         "
       >
         <table style="width: 100%">
@@ -196,7 +196,7 @@ export async function POST(req) {
           width: 100%;
           max-width: 600px;
           margin: auto;
-          padding-bottom: 16px;
+          padding-bottom: 32px;
         "
       >
         <table
