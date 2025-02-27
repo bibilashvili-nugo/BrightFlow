@@ -112,12 +112,12 @@ export async function POST(req) {
                   height="29"
                   style="vertical-align: middle; display: inline"
                 />
-                <span style="display: inline-block; padding-left: 12px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; color: black; vertical-align: middle;"
+                <span style="display: inline-block; padding-left: 12px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; color: #67645E; vertical-align: middle;"
                   >BrightFlow</span
                 >
               </td>
               <td align="right">
-                <span style="font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 400; color: black"
+                <span style="font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 400; color: #67645E"
                   >Illuminating the Path to Tomorrow
                 </span>
               </td>
