@@ -73,12 +73,12 @@ export default function Home() {
           height={100}
           className="smaller:w-[23px] smaller:h-[29px] w-[29px] h-[35px] xl:w-[33px] xl:h-[39px] 2xl:w-[41px] 2xl:h-[49px]"
         />
-        <span
+        <h2
           className="text-white font-interDisplayBold smaller:text-xl line-height-auto text-2xl 
         xl:text-[28px] 2xl:text-[32px] 2xl:leading-[39px]"
         >
           BrightFlow
-        </span>
+        </h2>
       </div>
       <div className="flex flex-col items-center justify-center gap-2 smaller:pb-8 pb-[3.375rem] xl:pb-[100px] 2xl:pb-[133px]">
         <p
@@ -88,29 +88,29 @@ export default function Home() {
           წინასწარი რეგისტრაცია დაიწყო!
         </p>
         <div className="smaller:flex flex-col justify-center items-center hidden">
-          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
+          <h2 className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             გახდი ციფრული
-          </span>
-          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
+          </h2>
+          <h2 className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             პროდუქტების
-          </span>
-          <span className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
+          </h2>
+          <h2 className="text-[#FFFFFF] font-notoSanSemiBold smaller:text-xl smaller:line-height-auto uppercase">
             საზოგადოების წევრი
-          </span>
+          </h2>
         </div>
         <div className="flex flex-col justify-center items-center smaller:hidden">
-          <span
+          <h2
             className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]
           2xl:text-[44px] 2xl:leading-[60px]"
           >
             გახდი ციფრული პროდუქტების
-          </span>
-          <span
+          </h2>
+          <h2
             className="text-[#FFFFFF] font-notoSanBold line-height-auto text-2xl md:text-[28px] xl:text-[32px] xl:leading-[44px]
           2xl:text-[44px] 2xl:leading-[60px]"
           >
             საზოგადოების წევრი
-          </span>
+          </h2>
         </div>
         <p
           className="text-[#A0A2A6] font-notoSanRegular smaller:text-xs line-height-auto text-sm
@@ -125,9 +125,9 @@ export default function Home() {
         pb-[41px] min-h-[302px] xl:min-h-[179px] md:pb-[49px] xl:pb-[34px] 2xl:pb-[67px] xl:flex-col xl:gap-4
         w-full"
       >
-        <h2 className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
+        <span className="text-[#A0A2A6] text-xs line-height-auto font-notoSanRegular smaller:mb-0 mb-4 xl:mb-0">
           დასაწყისი - მაისი 2025
-        </h2>
+        </span>
         <div className="flex justify-center items-center w-full md:w-auto">
           <div
             className="flex flex-col justify-center items-center smaller:gap-4 xl:flex-row xl:gap-4
