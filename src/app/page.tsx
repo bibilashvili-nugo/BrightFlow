@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full  min-h-screen
+      className="flex flex-col items-center justify-center w-full  h-[100dvh]
     xl:py-[98px] 2xl:pt-[124px] 2xl:pb-[179px]
     px-4 md:px-[107px]"
     >
