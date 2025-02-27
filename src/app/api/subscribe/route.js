@@ -290,7 +290,8 @@ export async function POST(req) {
                 font-weight: normal;
                 width: 100%;
                 color: white;
-                padding: 25.5px 194px;
+                padding-top: 25.5px;
+                padding-bottom: 25.5px;
               "
             >
               რა არის BrightFlow
@@ -303,7 +304,8 @@ export async function POST(req) {
                 font-size: 18px;
                 font-weight: normal;
                 color: white;
-                padding: 25.5px 82.5px;
+                padding-top: 25.5px;
+                padding-bottom: 25.5px;
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
               "
@@ -317,7 +319,8 @@ export async function POST(req) {
                 font-size: 18px;
                 font-weight: normal;
                 color: white;
-                padding: 25.5px 112px;
+                padding-top: 25.5px;
+                padding-bottom: 25.5px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
               "
             >
