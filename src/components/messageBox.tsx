@@ -26,23 +26,26 @@ export default function MessageBox({ checkStatus, email }: Status) {
   if (checkStatus) {
     return (
       <div
-        className="w-full xl:w-[588px] xl:min-h-[56px] 2xl:w-[614px] h-[74px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-[16px] md:w-[530px]
+        className="w-full xl:w-[588px] 2xl:w-[614px] border border-[#D5FE00] border-opacity-20 rounded-xl py-4 pl-4 pr-[16px] md:w-[530px]
       "
       >
-        <div className="flex justify-between place-items-start gap-3">
-          <Image
-            src="/Circle_Check.png"
-            alt="circus check"
-            width={24}
-            height={24}
-          />
-          <span className="smaller:text-[10px] smaller:leading-[13px] text-xs leading-[21px] text-[#A0A2A6]  min-h-[22px]">
-            {`შენი ელ.ფოსტა `}
-            <span className="text-white text-xs leading-[21px] smaller:text-[10px] smaller:leading-[13px]">
-              {email}
+        <div className="flex justify-between place-items-start">
+          <div className="flex gap-3">
+            <Image
+              src="/Circle_Check.png"
+              alt="circus check"
+              width={24}
+              height={24}
+              className="w-6 h-6"
+            />
+            <span className="smaller:text-[10px] smaller:leading-[13px] text-xs leading-[21px] text-[#A0A2A6]">
+              {`შენი ელ.ფოსტა `}
+              <span className="text-white text-xs leading-[21px] smaller:text-[10px] smaller:leading-[13px]">
+                {email}
+              </span>
+              {` დამატებულია ჩვენს მოლოდინის სიაში!`}
             </span>
-            {` დამატებულია ჩვენს მოლოდინის სიაში!`}
-          </span>
+          </div>
           <Image
             src="/Close_SM.png"
             alt="close button"
@@ -56,7 +59,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
     );
   } else {
     return (
-      <div className="w-full md:w-[530px] xl:w-[588px] 2xl:w-[614px] h-[56px] border border-[#FD411B] border-opacity-20 rounded-xl pl-4 py-4 pr-[16px]">
+      <div className="w-full md:w-[530px] xl:w-[588px] 2xl:w-[614px] border border-[#FD411B] border-opacity-20 rounded-xl pl-4 py-4 pr-[16px]">
         <div className="flex justify-between place-items-start gap-3">
           <div className="flex gap-3">
             <Image

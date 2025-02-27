@@ -150,7 +150,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center h-[74px] w-full 2xl:mt-2 ">
+        <div className="flex justify-center w-full 2xl:mt-2 ">
           <MessageBox checkStatus={checkStatus} email={email} />
         </div>
       </form>
