@@ -36,9 +36,11 @@ export default function MessageBox({ checkStatus, email }: Status) {
             width={24}
             height={24}
           />
-          <span className="text-xs leading-[21px] text-[#A0A2A6]  min-h-[22px]">
+          <span className="smaller:text-[10px] smaller:leading-[13px] text-xs leading-[21px] text-[#A0A2A6]  min-h-[22px]">
             {`შენი ელ.ფოსტა `}
-            <span className="text-white text-xs leading-[21px]">{email}</span>
+            <span className="text-white text-xs leading-[21px] smaller:text-[10px] smaller:leading-[13px]">
+              {email}
+            </span>
             {` დამატებულია ჩვენს მოლოდინის სიაში!`}
           </span>
           <Image
@@ -63,7 +65,7 @@ export default function MessageBox({ checkStatus, email }: Status) {
               width={24}
               height={24}
             />
-            <span className="text-xs leading-[21px] text-[#A0A2A6] w-[384px] font-notoSanRegular">
+            <span className="smaller:text-[10px] smaller:leading-[13px] smaller:w-[200px] text-xs leading-[21px] text-[#A0A2A6] w-[384px] font-notoSanRegular">
               {`შენს მიერ შეყვენილი მონაცემები არასწორია!`}
             </span>
           </div>
