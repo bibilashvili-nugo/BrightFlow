@@ -46,7 +46,7 @@ export async function POST(req) {
     // Send email to yourself with form details
     await transporter.sendMail({
       from: `"Web Form" <${SMTP_USER}>`, // You can use your SMTP_USER email here
-      to: "bibilashvili6@gmail.com", // Replace with your email address
+      to: "info@brightflow.ge", // Replace with your email address
       subject: "New Form Submission",
       text: `You have a new submission:\n\nName: ${name}\nEmail: ${email}`,
     });
